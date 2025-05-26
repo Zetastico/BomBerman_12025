@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\BomBerman_012025.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\BomBerman_012025.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\BomBerman_012025Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\BomBerman_012025">
+      <UniqueIdentifier>{1FECE015-559A-3910-B284-8B04C23417E8}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\BomBerman_012025\BomBerman_012025.Build.cs">
+      <Filter>Source\BomBerman_012025</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\BomBerman_012025\BomBerman_012025.cpp">
+      <Filter>Source\BomBerman_012025</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\BomBerman_012025.h">
+      <Filter>Source\BomBerman_012025</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\BomBerman_012025Character.cpp">
+      <Filter>Source\BomBerman_012025</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\BomBerman_012025Character.h">
+      <Filter>Source\BomBerman_012025</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\BomBerman_012025GameMode.cpp">
+      <Filter>Source\BomBerman_012025</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\BomBerman_012025GameMode.h">
+      <Filter>Source\BomBerman_012025</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Private">
+      <UniqueIdentifier>{0E921D3B-3784-3307-9C69-720283713E01}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\BloqueBase.cpp">
+      <Filter>Source\BomBerman_012025\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Builder_Mapa_Bosque.cpp">
+      <Filter>Source\BomBerman_012025\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Private\Bloques">
+      <UniqueIdentifier>{E36C403A-653C-3CE8-AFCD-7B3B4A283B58}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Bloques\BloqueTitilante.cpp">
+      <Filter>Source\BomBerman_012025\Private\Bloques</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Bloques\Bloque_Destruible.cpp">
+      <Filter>Source\BomBerman_012025\Private\Bloques</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Bloques\Bloque_Madera.cpp">
+      <Filter>Source\BomBerman_012025\Private\Bloques</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Bloques\Bloque_Muro.cpp">
+      <Filter>Source\BomBerman_012025\Private\Bloques</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Bloques\Bloque_Puerta.cpp">
+      <Filter>Source\BomBerman_012025\Private\Bloques</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Private\Bombas">
+      <UniqueIdentifier>{C344D8B1-475F-3527-A157-B3C0DC27ED49}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Bombas\BombaBase.cpp">
+      <Filter>Source\BomBerman_012025\Private\Bombas</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Private\Builder">
+      <UniqueIdentifier>{2574B51F-9545-3356-B4D9-569154B7E069}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Builder\Builder_Main.cpp">
+      <Filter>Source\BomBerman_012025\Private\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Builder\Builder_Mapa.cpp">
+      <Filter>Source\BomBerman_012025\Private\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Builder\Director_Builder.cpp">
+      <Filter>Source\BomBerman_012025\Private\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Builder\Mapa_Producto.cpp">
+      <Filter>Source\BomBerman_012025\Private\Builder</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Private\Factory">
+      <UniqueIdentifier>{CB74ADEA-91E1-3BA2-ABA8-FD76B6A01581}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Factory\Factory_Main.cpp">
+      <Filter>Source\BomBerman_012025\Private\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Factory\Mapa_Factory.cpp">
+      <Filter>Source\BomBerman_012025\Private\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Factory\MyActor.cpp">
+      <Filter>Source\BomBerman_012025\Private\Factory</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Public">
+      <UniqueIdentifier>{02B8D00C-7EEE-3EE8-854D-F3C12403A565}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\BloqueBase.h">
+      <Filter>Source\BomBerman_012025\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Builder_Mapa_Bosque.h">
+      <Filter>Source\BomBerman_012025\Public</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Public\Bloques">
+      <UniqueIdentifier>{942F08FC-766E-3876-AEA4-165B196C06FF}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Bloques\BloqueTitilante.h">
+      <Filter>Source\BomBerman_012025\Public\Bloques</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Bloques\Bloque_Destruible.h">
+      <Filter>Source\BomBerman_012025\Public\Bloques</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Bloques\Bloque_Madera.h">
+      <Filter>Source\BomBerman_012025\Public\Bloques</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Bloques\Bloque_Muro.h">
+      <Filter>Source\BomBerman_012025\Public\Bloques</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Bloques\Bloque_Puerta.h">
+      <Filter>Source\BomBerman_012025\Public\Bloques</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Public\Bombas">
+      <UniqueIdentifier>{A1B08D0B-859D-3150-96A4-6E98AB4C809E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Bombas\BombaBase.h">
+      <Filter>Source\BomBerman_012025\Public\Bombas</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Public\Builder">
+      <UniqueIdentifier>{AFEB4418-491F-31D3-94B5-843CD353B7C7}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Builder\Builder_Main.h">
+      <Filter>Source\BomBerman_012025\Public\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Builder\Builder_Mapa.h">
+      <Filter>Source\BomBerman_012025\Public\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Builder\Director_Builder.h">
+      <Filter>Source\BomBerman_012025\Public\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Builder\Mapa_Producto.h">
+      <Filter>Source\BomBerman_012025\Public\Builder</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Public\Factory">
+      <UniqueIdentifier>{B3F9D241-8439-37E8-81E6-070EB4DDAC7F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Factory\Factory_Main.h">
+      <Filter>Source\BomBerman_012025\Public\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Factory\Mapa_Factory.h">
+      <Filter>Source\BomBerman_012025\Public\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Factory\MyActor.h">
+      <Filter>Source\BomBerman_012025\Public\Factory</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

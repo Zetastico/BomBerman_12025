@@ -1,0 +1,54 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+// IWYU pragma: private, include "Bloques/Bloque_Muro.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+#ifdef BOMBERMAN_012025_Bloque_Muro_generated_h
+#error "Bloque_Muro.generated.h already included, missing '#pragma once' in Bloque_Muro.h"
+#endif
+#define BOMBERMAN_012025_Bloque_Muro_generated_h
+
+#define FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Bloques_Bloque_Muro_h_15_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesABloque_Muro(); \
+	friend struct Z_Construct_UClass_ABloque_Muro_Statics; \
+public: \
+	DECLARE_CLASS(ABloque_Muro, ABloqueBase, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/BomBerman_012025"), NO_API) \
+	DECLARE_SERIALIZER(ABloque_Muro)
+
+
+#define FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Bloques_Bloque_Muro_h_15_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	ABloque_Muro(ABloque_Muro&&); \
+	ABloque_Muro(const ABloque_Muro&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ABloque_Muro); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABloque_Muro); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABloque_Muro) \
+	NO_API virtual ~ABloque_Muro();
+
+
+#define FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Bloques_Bloque_Muro_h_12_PROLOG
+#define FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Bloques_Bloque_Muro_h_15_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Bloques_Bloque_Muro_h_15_INCLASS_NO_PURE_DECLS \
+	FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Bloques_Bloque_Muro_h_15_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> BOMBERMAN_012025_API UClass* StaticClass<class ABloque_Muro>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Bloques_Bloque_Muro_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
