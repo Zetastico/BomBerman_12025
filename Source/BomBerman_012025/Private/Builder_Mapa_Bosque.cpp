@@ -10,8 +10,6 @@ ABuilder_Mapa_Bosque::ABuilder_Mapa_Bosque()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	
-
 }
 
 // Called when the game starts or when spawned
@@ -33,7 +31,7 @@ void ABuilder_Mapa_Bosque::ConstruirMuros(FVector pos)
 {
 
 	if (!Fabrica || !MapaConstruido) return;
-	Fabrica->CrearBloque("BloqueMuro", pos);
+	MapaConstruido->AnadirBloque(Fabrica->CrearBloque("BloqueMuro", pos));
 	return;
 
 }
@@ -41,7 +39,7 @@ void ABuilder_Mapa_Bosque::ConstruirMuros(FVector pos)
 void ABuilder_Mapa_Bosque::ConstruirBloques(FVector pos)
 {
 	if (!Fabrica || !MapaConstruido) return;
-	Fabrica->CrearBloque("BloqueMadera", pos);
+	MapaConstruido->AnadirBloque(Fabrica->CrearBloque("BloqueMadera", pos));
 	return;
 
 }
@@ -49,7 +47,7 @@ void ABuilder_Mapa_Bosque::ConstruirBloques(FVector pos)
 void ABuilder_Mapa_Bosque::ConstruirPuertas(FVector pos)
 {
 	if (!Fabrica || !MapaConstruido) return;
-	Fabrica->CrearBloque("BloquePuerta", pos);
+	MapaConstruido->AnadirBloque(Fabrica->CrearBloque("BloquePuerta", pos));
 	return;
 
 }
@@ -57,7 +55,8 @@ void ABuilder_Mapa_Bosque::ConstruirPuertas(FVector pos)
 void ABuilder_Mapa_Bosque::ConstruirObstaculos(FVector pos)
 {
 	if (!Fabrica || !MapaConstruido) return;
-	Fabrica->CrearBloque("BloqueTitilante", pos);
+	//Creamos el bloqe y lo guardamos en el mapa construido
+	MapaConstruido->AnadirBloque(Fabrica->CrearBloque("BloqueTitilante", pos));
 	return;
 
 }

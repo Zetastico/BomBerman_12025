@@ -4,8 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "Nav_Mesh_Bounds_Volum/Navi.h"
 #include "BomBerman_012025GameMode.generated.h"
-
 UCLASS(minimalapi)
 class ABomBerman_012025GameMode : public AGameModeBase
 {
@@ -33,6 +33,7 @@ protected:
 									{4,0,0,0,0,0,0,0,0,0,0,4},
 									{4,0,0,0,0,0,0,0,0,0,0,4},
 									{4,4,4,4,4,4,4,4,4,4,4,4}};
+
 };
 
 

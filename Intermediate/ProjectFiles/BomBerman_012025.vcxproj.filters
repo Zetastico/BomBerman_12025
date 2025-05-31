@@ -11,6 +11,8 @@
     <None Include="..\..\Source\BomBerman_012025Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -102,9 +104,30 @@
     <ClCompile Include="..\..\Source\BomBerman_012025\Private\Builder\Mapa_Producto.cpp">
       <Filter>Source\BomBerman_012025\Private\Builder</Filter>
     </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Private\Enemigos">
+      <UniqueIdentifier>{9ECAA600-DFEC-3353-9373-F37381113545}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Enemigos\Enemigo.cpp">
+      <Filter>Source\BomBerman_012025\Private\Enemigos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Enemigos\Enemigo_Bomb.cpp">
+      <Filter>Source\BomBerman_012025\Private\Enemigos</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Private\Facade">
+      <UniqueIdentifier>{1344473B-ACB3-3D17-886E-37ACC7981E23}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Facade\Bloque_Facade.cpp">
+      <Filter>Source\BomBerman_012025\Private\Facade</Filter>
+    </ClCompile>
     <Filter Include="Source\BomBerman_012025\Private\Factory">
       <UniqueIdentifier>{CB74ADEA-91E1-3BA2-ABA8-FD76B6A01581}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Factory\Bomba_Factory.cpp">
+      <Filter>Source\BomBerman_012025\Private\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Factory\Enemigo_Factory.cpp">
+      <Filter>Source\BomBerman_012025\Private\Factory</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Private\Factory\Factory_Main.cpp">
       <Filter>Source\BomBerman_012025\Private\Factory</Filter>
     </ClCompile>
@@ -113,6 +136,24 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Private\Factory\MyActor.cpp">
       <Filter>Source\BomBerman_012025\Private\Factory</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Private\Nav_Mesh_Bounds_Volum">
+      <UniqueIdentifier>{B8D73764-275B-31EF-B85E-F60A21198A9B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Nav_Mesh_Bounds_Volum\Navi.cpp">
+      <Filter>Source\BomBerman_012025\Private\Nav_Mesh_Bounds_Volum</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Private\Propotype">
+      <UniqueIdentifier>{C5FB6DAE-E9ED-320D-A41E-0FF30698D33C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Propotype\Bomba_Prototype.cpp">
+      <Filter>Source\BomBerman_012025\Private\Propotype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Propotype\Multi_Bomba.cpp">
+      <Filter>Source\BomBerman_012025\Private\Propotype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Propotype\Prototype_Main.cpp">
+      <Filter>Source\BomBerman_012025\Private\Propotype</Filter>
     </ClCompile>
     <Filter Include="Source\BomBerman_012025\Public">
       <UniqueIdentifier>{02B8D00C-7EEE-3EE8-854D-F3C12403A565}</UniqueIdentifier>
@@ -162,9 +203,30 @@
     <ClCompile Include="..\..\Source\BomBerman_012025\Public\Builder\Mapa_Producto.h">
       <Filter>Source\BomBerman_012025\Public\Builder</Filter>
     </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Public\Enemigos">
+      <UniqueIdentifier>{89C12F5D-8F7A-3182-8DE5-2ADCFCCD76F7}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Enemigos\Enemigo.h">
+      <Filter>Source\BomBerman_012025\Public\Enemigos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Enemigos\Enemigo_Bomb.h">
+      <Filter>Source\BomBerman_012025\Public\Enemigos</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Public\Facade">
+      <UniqueIdentifier>{7C9F7DC2-0233-335F-9767-E6CE3DD7C85F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Facade\Bloque_Facade.h">
+      <Filter>Source\BomBerman_012025\Public\Facade</Filter>
+    </ClCompile>
     <Filter Include="Source\BomBerman_012025\Public\Factory">
       <UniqueIdentifier>{B3F9D241-8439-37E8-81E6-070EB4DDAC7F}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Factory\Bomba_Factory.h">
+      <Filter>Source\BomBerman_012025\Public\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Factory\Enemigo_Factory.h">
+      <Filter>Source\BomBerman_012025\Public\Factory</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Public\Factory\Factory_Main.h">
       <Filter>Source\BomBerman_012025\Public\Factory</Filter>
     </ClCompile>
@@ -173,6 +235,24 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Public\Factory\MyActor.h">
       <Filter>Source\BomBerman_012025\Public\Factory</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Public\Nav_Mesh_Bounds_Volum">
+      <UniqueIdentifier>{A7D7B385-1681-378F-AD60-6046D8265FCA}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Nav_Mesh_Bounds_Volum\Navi.h">
+      <Filter>Source\BomBerman_012025\Public\Nav_Mesh_Bounds_Volum</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Public\Propotype">
+      <UniqueIdentifier>{C5170F04-1BCA-3CF2-9B65-60D4C55ADA92}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Propotype\Bomba_Prototype.h">
+      <Filter>Source\BomBerman_012025\Public\Propotype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Propotype\Multi_Bomba.h">
+      <Filter>Source\BomBerman_012025\Public\Propotype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Propotype\Prototype_Main.h">
+      <Filter>Source\BomBerman_012025\Public\Propotype</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

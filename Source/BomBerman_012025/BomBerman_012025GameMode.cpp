@@ -1,10 +1,12 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+﻿// Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "BomBerman_012025GameMode.h"
 #include "BomBerman_012025Character.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Sound/SoundCue.h"
 #include "Kismet/GameplayStatics.h"
+#include "Propotype/Bomba_Prototype.h"
+#include "Propotype/Multi_bomba.h"
 
 ABomBerman_012025GameMode::ABomBerman_012025GameMode()
 {
@@ -24,8 +26,26 @@ ABomBerman_012025GameMode::ABomBerman_012025GameMode()
 
 void ABomBerman_012025GameMode::BeginPlay()
 {
+	Super::BeginPlay();
+
 	if (LevelMusic)
 	{
 		UGameplayStatics::PlaySound2D(GetWorld(), LevelMusic);
 	}
+
+	UWorld* World = GetWorld();
+	if (World)
+	{
+		FActorSpawnParameters Params;
+		FVector Posicion = FVector(1000, 1000, 100); // Donde quieras colocarla
+
+		AMulti_Bomba* BombaPrototype = World->SpawnActor<AMulti_Bomba>(AMulti_Bomba::StaticClass(), Posicion, FRotator::ZeroRotator, Params);
+		if (BombaPrototype)
+		{
+			BombaPrototype->ConfigurarBomba(6.0f, 14); // ⏱ Tiempo para explotar: 3s, 🔥 Rango: 4
+			BombaPrototype->Clone();
+		}
+
+	}
+
 }
