@@ -81,4 +81,4 @@ void AP_Muro::SetParametros(float tamano)
 	tamanoBloque = tamano;
 	Mesh->SetRelativeScale3D(FVector(tamanoBloque, tamanoBloque, tamanoBloque));
 }
-
+//Implementacion en el GameMode

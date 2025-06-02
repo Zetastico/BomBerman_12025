@@ -80,4 +80,4 @@ void AP_Madera::SetParametros(float tamano)
 	tamanoBloque = tamano;
 	Mesh->SetRelativeScale3D(FVector(tamanoBloque, tamanoBloque, tamanoBloque));
 }
-
+//Implementacion en el GameMode
