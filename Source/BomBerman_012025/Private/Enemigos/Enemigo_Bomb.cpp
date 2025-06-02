@@ -24,7 +24,7 @@ AEnemigo_Bomb::AEnemigo_Bomb()
     Malla->SetupAttachment(RootComponent);
 
     // Configurar la malla estática
-    static ConstructorHelpers::FObjectFinder<UStaticMesh> CuboMesh(TEXT("/Script/Engine.StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
+    static ConstructorHelpers::FObjectFinder<UStaticMesh> CuboMesh(TEXT("/Script/Engine.StaticMesh'/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere'"));
     if (CuboMesh.Succeeded())
     {
         // Asignar la malla estática

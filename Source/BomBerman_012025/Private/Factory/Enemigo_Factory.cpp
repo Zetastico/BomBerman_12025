@@ -3,6 +3,8 @@
 
 #include "Factory/Enemigo_Factory.h"
 #include "Enemigos/Enemigo_Bomb.h"
+#include "Enemigos/Enemigo_Comandante.h"
+#include "Enemigos/Enemigo_Rapido.h"
 // Sets default values
 AEnemigo_Factory::AEnemigo_Factory()
 {
@@ -29,6 +31,12 @@ AEnemigo* AEnemigo_Factory::CrearEnemigo(FVector Posicion, FString Tipo)
 {
 	if (Tipo == "EnemigoBomb") {
 		return GetWorld()->SpawnActor<AEnemigo_Bomb>(AEnemigo_Bomb::StaticClass(), Posicion, FRotator::ZeroRotator);
+	}
+	else if (Tipo == "EnemigoRapido") {
+		return GetWorld()->SpawnActor<AEnemigo_Rapido>(AEnemigo_Rapido::StaticClass(), Posicion, FRotator::ZeroRotator);
+	}
+	else if (Tipo == "Comandante") {
+		return GetWorld()->SpawnActor<AEnemigo_Comandante>(AEnemigo_Comandante::StaticClass(), Posicion, FRotator::ZeroRotator);
 	}
 	else {
 		return nullptr;

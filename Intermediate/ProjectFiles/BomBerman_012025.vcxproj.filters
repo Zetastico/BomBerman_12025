@@ -65,6 +65,21 @@
     <Filter Include="Source\BomBerman_012025\Private\2do_Parcial">
       <UniqueIdentifier>{191C4375-00EB-3757-A140-33C2A1AA0955}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\BomBerman_012025\Private\2do_Parcial\2P_Builder">
+      <UniqueIdentifier>{587F507C-F0B8-333C-947F-403BCB81A3E4}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\2do_Parcial\2P_Builder\Builder_Enemigos.cpp">
+      <Filter>Source\BomBerman_012025\Private\2do_Parcial\2P_Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\2do_Parcial\2P_Builder\Builder_Enemigos_1.cpp">
+      <Filter>Source\BomBerman_012025\Private\2do_Parcial\2P_Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\2do_Parcial\2P_Builder\Builder_Enemigos_Main.cpp">
+      <Filter>Source\BomBerman_012025\Private\2do_Parcial\2P_Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\2do_Parcial\2P_Builder\Director_Enemigos.cpp">
+      <Filter>Source\BomBerman_012025\Private\2do_Parcial\2P_Builder</Filter>
+    </ClCompile>
     <Filter Include="Source\BomBerman_012025\Private\2do_Parcial\2P_Prototype">
       <UniqueIdentifier>{01512735-1F69-3854-A431-C5B841CC9A64}</UniqueIdentifier>
     </Filter>
@@ -131,6 +146,12 @@
     <ClCompile Include="..\..\Source\BomBerman_012025\Private\Enemigos\Enemigo_Bomb.cpp">
       <Filter>Source\BomBerman_012025\Private\Enemigos</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Enemigos\Enemigo_Comandante.cpp">
+      <Filter>Source\BomBerman_012025\Private\Enemigos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Enemigos\Enemigo_Rapido.cpp">
+      <Filter>Source\BomBerman_012025\Private\Enemigos</Filter>
+    </ClCompile>
     <Filter Include="Source\BomBerman_012025\Private\Facade">
       <UniqueIdentifier>{1344473B-ACB3-3D17-886E-37ACC7981E23}</UniqueIdentifier>
     </Filter>
@@ -182,6 +203,21 @@
     <Filter Include="Source\BomBerman_012025\Public\2do_Parcial">
       <UniqueIdentifier>{4D88CFF8-3D2E-3D77-8F03-C8768E716AC7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\BomBerman_012025\Public\2do_Parcial\2P_Builder">
+      <UniqueIdentifier>{64C67102-3D84-3A64-A9BF-28B0B105FEB6}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\2do_Parcial\2P_Builder\Builder_Enemigos.h">
+      <Filter>Source\BomBerman_012025\Public\2do_Parcial\2P_Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\2do_Parcial\2P_Builder\Builder_Enemigos_1.h">
+      <Filter>Source\BomBerman_012025\Public\2do_Parcial\2P_Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\2do_Parcial\2P_Builder\Builder_Enemigos_Main.h">
+      <Filter>Source\BomBerman_012025\Public\2do_Parcial\2P_Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\2do_Parcial\2P_Builder\Director_Enemigos.h">
+      <Filter>Source\BomBerman_012025\Public\2do_Parcial\2P_Builder</Filter>
+    </ClCompile>
     <Filter Include="Source\BomBerman_012025\Public\2do_Parcial\2P_Prototype">
       <UniqueIdentifier>{04D09D4B-6AC9-38C1-B4EA-4D0A3F870771}</UniqueIdentifier>
     </Filter>
@@ -246,6 +282,12 @@
       <Filter>Source\BomBerman_012025\Public\Enemigos</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Public\Enemigos\Enemigo_Bomb.h">
+      <Filter>Source\BomBerman_012025\Public\Enemigos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Enemigos\Enemigo_Comandante.h">
+      <Filter>Source\BomBerman_012025\Public\Enemigos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Enemigos\Enemigo_Rapido.h">
       <Filter>Source\BomBerman_012025\Public\Enemigos</Filter>
     </ClCompile>
     <Filter Include="Source\BomBerman_012025\Public\Facade">

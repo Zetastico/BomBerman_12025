@@ -282,6 +282,18 @@
     <ClCompile Include="..\..\Source\BomBerman_012025\Private\BloqueBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\2do_Parcial\2P_Builder\Builder_Enemigos.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\2do_Parcial\2P_Builder\Builder_Enemigos_1.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\2do_Parcial\2P_Builder\Builder_Enemigos_Main.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\2do_Parcial\2P_Builder\Director_Enemigos.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Private\2do_Parcial\2P_Prototype\Bloque_Prototype.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -333,6 +345,12 @@
     <ClCompile Include="..\..\Source\BomBerman_012025\Private\Enemigos\Enemigo_Bomb.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Enemigos\Enemigo_Comandante.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Enemigos\Enemigo_Rapido.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Private\Facade\Bloque_Facade.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -364,6 +382,18 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Public\BloqueBase.h">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\2do_Parcial\2P_Builder\Builder_Enemigos.h">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\2do_Parcial\2P_Builder\Builder_Enemigos_1.h">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\2do_Parcial\2P_Builder\Builder_Enemigos_Main.h">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\2do_Parcial\2P_Builder\Director_Enemigos.h">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Public\2do_Parcial\2P_Prototype\Bloque_Prototype.h">
@@ -415,6 +445,12 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Public\Enemigos\Enemigo_Bomb.h">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Enemigos\Enemigo_Comandante.h">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Enemigos\Enemigo_Rapido.h">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Public\Facade\Bloque_Facade.h">
