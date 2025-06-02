@@ -62,8 +62,14 @@
     <ClCompile Include="..\..\Source\BomBerman_012025\Private\BloqueBase.cpp">
       <Filter>Source\BomBerman_012025\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Builder_Mapa_Bosque.cpp">
-      <Filter>Source\BomBerman_012025\Private</Filter>
+    <Filter Include="Source\BomBerman_012025\Private\2do_Parcial">
+      <UniqueIdentifier>{191C4375-00EB-3757-A140-33C2A1AA0955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\BomBerman_012025\Private\2do_Parcial\2P_Prototype">
+      <UniqueIdentifier>{01512735-1F69-3854-A431-C5B841CC9A64}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\2do_Parcial\2P_Prototype\Bloque_Prototype.cpp">
+      <Filter>Source\BomBerman_012025\Private\2do_Parcial\2P_Prototype</Filter>
     </ClCompile>
     <Filter Include="Source\BomBerman_012025\Private\Bloques">
       <UniqueIdentifier>{E36C403A-653C-3CE8-AFCD-7B3B4A283B58}</UniqueIdentifier>
@@ -96,6 +102,9 @@
       <Filter>Source\BomBerman_012025\Private\Builder</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Private\Builder\Builder_Mapa.cpp">
+      <Filter>Source\BomBerman_012025\Private\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Builder\Builder_Mapa_Bosque.cpp">
       <Filter>Source\BomBerman_012025\Private\Builder</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Private\Builder\Director_Builder.cpp">
@@ -161,8 +170,14 @@
     <ClCompile Include="..\..\Source\BomBerman_012025\Public\BloqueBase.h">
       <Filter>Source\BomBerman_012025\Public</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Builder_Mapa_Bosque.h">
-      <Filter>Source\BomBerman_012025\Public</Filter>
+    <Filter Include="Source\BomBerman_012025\Public\2do_Parcial">
+      <UniqueIdentifier>{4D88CFF8-3D2E-3D77-8F03-C8768E716AC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\BomBerman_012025\Public\2do_Parcial\2P_Prototype">
+      <UniqueIdentifier>{04D09D4B-6AC9-38C1-B4EA-4D0A3F870771}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\2do_Parcial\2P_Prototype\Bloque_Prototype.h">
+      <Filter>Source\BomBerman_012025\Public\2do_Parcial\2P_Prototype</Filter>
     </ClCompile>
     <Filter Include="Source\BomBerman_012025\Public\Bloques">
       <UniqueIdentifier>{942F08FC-766E-3876-AEA4-165B196C06FF}</UniqueIdentifier>
@@ -195,6 +210,9 @@
       <Filter>Source\BomBerman_012025\Public\Builder</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Public\Builder\Builder_Mapa.h">
+      <Filter>Source\BomBerman_012025\Public\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Builder\Builder_Mapa_Bosque.h">
       <Filter>Source\BomBerman_012025\Public\Builder</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Public\Builder\Director_Builder.h">

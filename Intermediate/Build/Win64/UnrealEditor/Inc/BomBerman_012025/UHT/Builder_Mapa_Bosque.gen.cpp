@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "BomBerman_012025/Public/Builder_Mapa_Bosque.h"
+#include "BomBerman_012025/Public/Builder/Builder_Mapa_Bosque.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeBuilder_Mapa_Bosque() {}
 
@@ -32,14 +32,14 @@ struct Z_Construct_UClass_ABuilder_Mapa_Bosque_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-		{ "IncludePath", "Builder_Mapa_Bosque.h" },
-		{ "ModuleRelativePath", "Public/Builder_Mapa_Bosque.h" },
+		{ "IncludePath", "Builder/Builder_Mapa_Bosque.h" },
+		{ "ModuleRelativePath", "Public/Builder/Builder_Mapa_Bosque.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MapaConstruido_MetaData[] = {
-		{ "ModuleRelativePath", "Public/Builder_Mapa_Bosque.h" },
+		{ "ModuleRelativePath", "Public/Builder/Builder_Mapa_Bosque.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Fabrica_MetaData[] = {
-		{ "ModuleRelativePath", "Public/Builder_Mapa_Bosque.h" },
+		{ "ModuleRelativePath", "Public/Builder/Builder_Mapa_Bosque.h" },
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MapaConstruido;
@@ -99,14 +99,14 @@ ABuilder_Mapa_Bosque::~ABuilder_Mapa_Bosque() {}
 // End Class ABuilder_Mapa_Bosque
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Mapa_Bosque_h_Statics
+struct Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Mapa_Bosque_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABuilder_Mapa_Bosque, ABuilder_Mapa_Bosque::StaticClass, TEXT("ABuilder_Mapa_Bosque"), &Z_Registration_Info_UClass_ABuilder_Mapa_Bosque, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABuilder_Mapa_Bosque), 936705788U) },
+		{ Z_Construct_UClass_ABuilder_Mapa_Bosque, ABuilder_Mapa_Bosque::StaticClass, TEXT("ABuilder_Mapa_Bosque"), &Z_Registration_Info_UClass_ABuilder_Mapa_Bosque, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABuilder_Mapa_Bosque), 2042652965U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Mapa_Bosque_h_1024247310(TEXT("/Script/BomBerman_012025"),
-	Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Mapa_Bosque_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Mapa_Bosque_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Mapa_Bosque_h_1548427145(TEXT("/Script/BomBerman_012025"),
+	Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Mapa_Bosque_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Mapa_Bosque_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

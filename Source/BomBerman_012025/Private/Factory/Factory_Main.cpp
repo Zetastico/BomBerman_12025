@@ -5,9 +5,10 @@
 #include "BloqueBase.h"
 #include "Factory/Mapa_Factory.h"
 #include "Factory/Bomba_Factory.h"
+#include "Factory/Enemigo_Factory.h"
 #include "Propotype/Bomba_Prototype.h"
 #include "Propotype/Multi_Bomba.h"
-
+#include "Enemigos/Enemigo_Bomb.h"
 // Sets default values
 AFactory_Main::AFactory_Main()
 {
@@ -23,13 +24,15 @@ void AFactory_Main::BeginPlay()
 
 	AMapa_Factory* FabricaMapa = GetWorld()->SpawnActor<AMapa_Factory>(AMapa_Factory::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
 	ABomba_Factory* FabricaBomba = GetWorld()->SpawnActor<ABomba_Factory>(ABomba_Factory::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);;
-
+	AEnemigo_Factory* FabricaEnemigo = GetWorld()->SpawnActor<AEnemigo_Factory>(AEnemigo_Factory::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
 	//ABloqueBase* Bloque = FabricaMapa->CrearBloque("BloqueTitilante", FVector(1000, 1000, 100));
 	// Bloque = FabricaMapa->CrearBloque("BloqueTitilante", FVector(1100, 1000, 100));
 	 //Bloque = FabricaMapa->CrearBloque("BloqueTitilante", FVector(1200, 1000, 100));
 
 	 IBomba_Prototype* BombaPrototype = FabricaBomba->CrearBomba(FVector(1500, 1000, 100), "Multi Bomba");
 	 BombaPrototype = FabricaBomba->CrearBomba(FVector(1150, 1100, 100), "Multi Bomba");
+
+	 AEnemigo* Enemigo = FabricaEnemigo->CrearEnemigo(FVector(2000, 1000, 100), "EnemigoBomb");
 }
 
 // Called every frame

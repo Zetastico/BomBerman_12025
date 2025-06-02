@@ -32,11 +32,14 @@ ABloque_Facade::ABloque_Facade()
     TriggerBox->SetBoxExtent(FVector(50, 50, 50));
     TriggerBox->SetCollisionProfileName("Trigger");
     TriggerBox->OnComponentBeginOverlap.AddDynamic(this, &ABloque_Facade::OnOverlapBegin);
+	
 }
 
 void ABloque_Facade::BeginPlay()
 {
     Super::BeginPlay();
+    Builder = GetWorld()->SpawnActor<ABuilder_Main>(ABuilder_Main::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
+    Factory = GetWorld()->SpawnActor<AFactory_Main>(AFactory_Main::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
 }
 
 void ABloque_Facade::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
@@ -46,21 +49,37 @@ void ABloque_Facade::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor*
     if (!bActivado && OtherActor && OtherActor->IsA(ACharacter::StaticClass()))
     {
         bActivado = true;
-        Activar_Nivel_Facil();
+        int32 RandomNumber = FMath::RandRange(1, 3);
+        switch (RandomNumber)
+        {
+        case 1:
+            Activar_Nivel_Facil();
+            break;
+		case 2:
+			Activar_Nivel_Medio();
+			break;
+		case 3:
+			Activar_Nivel_Dificil();
+            break;
+		default:
+            break;
+        }
     }
 }
 
 void ABloque_Facade::Activar_Nivel_Facil()
 {
-	AFactory_Main* Factory = GetWorld()->SpawnActor<AFactory_Main>(AFactory_Main::StaticClass(), GetActorLocation(), GetActorRotation());
-	ABuilder_Main* Builder = GetWorld()->SpawnActor<ABuilder_Main>(ABuilder_Main::StaticClass(), GetActorLocation(), GetActorRotation());
+	
+	Builder->ConstrirMapaFacil();
 }
 
 void ABloque_Facade::Activar_Nivel_Medio()
 {
+	Builder->ConstrirMapaMedio();
 }
 
 void ABloque_Facade::Activar_Nivel_Dificil()
 {
+	Builder->ConstrirMapaDificil();
 }
 

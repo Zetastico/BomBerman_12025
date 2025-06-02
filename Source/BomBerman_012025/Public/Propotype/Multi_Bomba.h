@@ -6,6 +6,19 @@
 #include "NiagaraSystem.h"
 #include "NiagaraFunctionLibrary.h"
 #include "Multi_Bomba.generated.h"
+
+USTRUCT(BlueprintType)
+struct FBombaData
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float TiempoParaExplotar = 2.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float RangoExplosion = 3.0f;
+};
+
 UCLASS()
 class BOMBERMAN_012025_API AMulti_Bomba : public AActor, public IBomba_Prototype
 {
@@ -17,33 +30,27 @@ public:
 
 	virtual UBomba_Prototype* Clone() const override;
 
-	void ConfigurarBomba(float NuevoTiempo, float NuevoRango);
+	void AplicarDatos(const FBombaData& Datos);
+	const FBombaData& ObtenerDatos() const { return DatosBomba; }
 
 protected:
-	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere)
-	float TiempoParaExplotar = 5.0f;
+	UStaticMeshComponent* Mesh;
 
 	UPROPERTY(EditAnywhere)
-	float RangoExplosion = 5;
+	UNiagaraSystem* EfectoExplosion;
+
+	UPROPERTY(EditAnywhere)
+	FBombaData DatosBomba;
 
 	FTimerHandle TimerHandle_Explosion;
 
-	UFUNCTION()
+	void PrepararExplosion();
 	void Explotar();
-
 	void ExplorarEnDireccion(FVector Direccion);
 
-protected:
-	UStaticMeshComponent* Mesh;
-
-	UPROPERTY(EditAnywhere, Category = "FX")
-	UNiagaraSystem* EfectoExplosion;
-
 public:
-	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
 };

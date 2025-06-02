@@ -4,8 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Enemigos/Enemigo.h"
 #include "Enemigo_Factory.generated.h"
-
 UCLASS()
 class BOMBERMAN_012025_API AEnemigo_Factory : public AActor
 {
@@ -22,5 +22,7 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	AEnemigo* CrearEnemigo(FVector Posicion, FString Tipo);
 
 };

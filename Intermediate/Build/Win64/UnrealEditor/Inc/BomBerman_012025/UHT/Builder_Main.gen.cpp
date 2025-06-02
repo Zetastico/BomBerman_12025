@@ -14,6 +14,7 @@ BOMBERMAN_012025_API UClass* Z_Construct_UClass_ABuilder_Main();
 BOMBERMAN_012025_API UClass* Z_Construct_UClass_ABuilder_Main_NoRegister();
 BOMBERMAN_012025_API UClass* Z_Construct_UClass_ABuilder_Mapa_Bosque_NoRegister();
 BOMBERMAN_012025_API UClass* Z_Construct_UClass_ADirector_Builder_NoRegister();
+BOMBERMAN_012025_API UClass* Z_Construct_UClass_AEnemigo_Factory_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_AActor();
 UPackage* Z_Construct_UPackage__Script_BomBerman_012025();
 // End Cross Module References
@@ -42,9 +43,14 @@ struct Z_Construct_UClass_ABuilder_Main_Statics
 		{ "Category", "Main" },
 		{ "ModuleRelativePath", "Public/Builder/Builder_Main.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FabricaEnemigo_MetaData[] = {
+		{ "Category", "Main" },
+		{ "ModuleRelativePath", "Public/Builder/Builder_Main.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DirectorBuilder;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_BuilderMapaBosque;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_FabricaEnemigo;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -54,9 +60,11 @@ struct Z_Construct_UClass_ABuilder_Main_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABuilder_Main_Statics::NewProp_DirectorBuilder = { "DirectorBuilder", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABuilder_Main, DirectorBuilder), Z_Construct_UClass_ADirector_Builder_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DirectorBuilder_MetaData), NewProp_DirectorBuilder_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABuilder_Main_Statics::NewProp_BuilderMapaBosque = { "BuilderMapaBosque", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABuilder_Main, BuilderMapaBosque), Z_Construct_UClass_ABuilder_Mapa_Bosque_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BuilderMapaBosque_MetaData), NewProp_BuilderMapaBosque_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABuilder_Main_Statics::NewProp_FabricaEnemigo = { "FabricaEnemigo", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABuilder_Main, FabricaEnemigo), Z_Construct_UClass_AEnemigo_Factory_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FabricaEnemigo_MetaData), NewProp_FabricaEnemigo_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABuilder_Main_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuilder_Main_Statics::NewProp_DirectorBuilder,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuilder_Main_Statics::NewProp_BuilderMapaBosque,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuilder_Main_Statics::NewProp_FabricaEnemigo,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABuilder_Main_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ABuilder_Main_Statics::DependentSingletons[])() = {
@@ -99,10 +107,10 @@ ABuilder_Main::~ABuilder_Main() {}
 struct Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Main_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABuilder_Main, ABuilder_Main::StaticClass, TEXT("ABuilder_Main"), &Z_Registration_Info_UClass_ABuilder_Main, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABuilder_Main), 3052270755U) },
+		{ Z_Construct_UClass_ABuilder_Main, ABuilder_Main::StaticClass, TEXT("ABuilder_Main"), &Z_Registration_Info_UClass_ABuilder_Main, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABuilder_Main), 1035432517U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Main_h_2546116271(TEXT("/Script/BomBerman_012025"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Main_h_131039978(TEXT("/Script/BomBerman_012025"),
 	Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Main_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Main_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

@@ -36,13 +36,16 @@ void ABomBerman_012025GameMode::BeginPlay()
 	UWorld* World = GetWorld();
 	if (World)
 	{
+		FBombaData Datos;
+		Datos.TiempoParaExplotar = 10.0f;
+		Datos.RangoExplosion = 200.0f;
 		FActorSpawnParameters Params;
 		FVector Posicion = FVector(1000, 1000, 100); // Donde quieras colocarla
 
 		AMulti_Bomba* BombaPrototype = World->SpawnActor<AMulti_Bomba>(AMulti_Bomba::StaticClass(), Posicion, FRotator::ZeroRotator, Params);
 		if (BombaPrototype)
 		{
-			BombaPrototype->ConfigurarBomba(6.0f, 14); // ⏱ Tiempo para explotar: 3s, 🔥 Rango: 4
+			BombaPrototype->AplicarDatos(Datos);
 			BombaPrototype->Clone();
 		}
 

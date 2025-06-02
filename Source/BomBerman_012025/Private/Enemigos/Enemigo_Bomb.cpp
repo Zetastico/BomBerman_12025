@@ -11,7 +11,6 @@
 #include "Navigation/PathFollowingComponent.h"
 #include "DrawDebugHelpers.h"
 #include "BloqueBase.h"
-bool AEnemigo::bJugadorDetectado = false;
 
 AEnemigo_Bomb::AEnemigo_Bomb()
 {

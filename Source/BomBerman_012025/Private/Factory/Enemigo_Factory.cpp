@@ -2,7 +2,7 @@
 
 
 #include "Factory/Enemigo_Factory.h"
-
+#include "Enemigos/Enemigo_Bomb.h"
 // Sets default values
 AEnemigo_Factory::AEnemigo_Factory()
 {
@@ -23,5 +23,15 @@ void AEnemigo_Factory::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+AEnemigo* AEnemigo_Factory::CrearEnemigo(FVector Posicion, FString Tipo)
+{
+	if (Tipo == "EnemigoBomb") {
+		return GetWorld()->SpawnActor<AEnemigo_Bomb>(AEnemigo_Bomb::StaticClass(), Posicion, FRotator::ZeroRotator);
+	}
+	else {
+		return nullptr;
+	}
 }
 
