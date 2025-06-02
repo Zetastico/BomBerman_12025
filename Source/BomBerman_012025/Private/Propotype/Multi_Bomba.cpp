@@ -43,7 +43,8 @@ void AMulti_Bomba::BeginPlay()
 {
 	Super::BeginPlay();
 
-	
+	AplicarDatos(FBombaData()); // Aplicar datos por defecto
+	PrepararExplosion();
 }
 
 void AMulti_Bomba::AplicarDatos(const FBombaData& Datos)
@@ -128,6 +129,5 @@ void AMulti_Bomba::ExplorarEnDireccion(FVector Direccion)
 void AMulti_Bomba::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	AplicarDatos(FBombaData()); // Aplicar datos por defecto
-	PrepararExplosion();
+	
 }

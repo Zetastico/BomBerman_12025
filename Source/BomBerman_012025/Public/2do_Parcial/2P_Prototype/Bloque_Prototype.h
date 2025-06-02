@@ -6,21 +6,18 @@
 #include "GameFramework/Actor.h"
 #include "Bloque_Prototype.generated.h"
 
-UCLASS()
-class BOMBERMAN_012025_API ABloque_Prototype : public AActor
+UINTERFACE(MinimalAPI)
+class UBloque_Prototype : public UInterface
 {
 	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
-	ABloque_Prototype();
-
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
 };
+
+class BOMBERMAN_012025_API IBloque_Prototype
+{
+	GENERATED_BODY()
+
+public:
+	// Sets default values for this actor's properties
+	virtual UBloque_Prototype* Clone(const FVector& NuevaPosicion) const = 0;
+};
+

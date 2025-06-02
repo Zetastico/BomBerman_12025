@@ -7,6 +7,10 @@
 #include "Kismet/GameplayStatics.h"
 #include "Propotype/Bomba_Prototype.h"
 #include "Propotype/Multi_bomba.h"
+#include "2do_Parcial/2P_Prototype/Bloque_Prototype.h"	
+#include "2do_Parcial/2P_Prototype/P_Muro.h"
+#include "2do_Parcial/2P_Prototype/P_Madera.h"
+#include "2do_Parcial/2P_Prototype/P_Titilante.h"
 
 ABomBerman_012025GameMode::ABomBerman_012025GameMode()
 {
@@ -49,6 +53,58 @@ void ABomBerman_012025GameMode::BeginPlay()
 			BombaPrototype->Clone();
 		}
 
-	}
+		
 
+		//arrayMapaBloques2
+
+		// Spawneamos un bloque original
+		// Spawneamos un bloque original
+		FVector PosicionInicial = FVector(0, 0, 0);
+		AP_Muro* MuroPrototype = World->SpawnActor<AP_Muro>(AP_Muro::StaticClass(), PosicionInicial, FRotator::ZeroRotator, Params);
+		AP_Madera* MaderaPrototype = World->SpawnActor<AP_Madera>(AP_Madera::StaticClass(), PosicionInicial, FRotator::ZeroRotator, Params);
+		AP_Titilante* TitilantePrototype = World->SpawnActor<AP_Titilante>(AP_Titilante::StaticClass(), PosicionInicial, FRotator::ZeroRotator, Params);
+		TitilantePrototype->SetParametros(4.f, 4.0f, 2.0f, true);
+		AP_Titilante* ClonTitilante;
+		AP_Madera* ClonMadera;
+		if (!MuroPrototype) return;
+
+		int opcion;
+
+		// Generamos un mapa de bloques clonando el original
+		for (int Fila = 0; Fila < arrayMapaBloques2.Num(); ++Fila)
+		{
+			for (int Columna = 0; Columna < arrayMapaBloques2[Fila].Num(); ++Columna)
+			{
+				FVector NuevaPos = FVector(Fila * 200, Columna * 200, 0);
+				// El original ya se colocó en la primera posición
+				if (Fila == 0 && Columna == 0)
+				{
+					MuroPrototype->SetActorLocation(NuevaPos);
+					continue;
+				}
+				if (Columna < arrayMapaBloques2.Num()/2) {
+					opcion = arrayMapaBloques2[Fila][Columna];
+				}
+				else {
+					opcion = FMath::RandRange(0, 4);
+				}
+				switch (opcion) {
+				case 0:
+					break;
+				case 1:
+					ClonTitilante = Cast<AP_Titilante>(TitilantePrototype->Clone(NuevaPos));
+					break;
+				case 2:
+					ClonMadera = Cast<AP_Madera>(MaderaPrototype->Clone(NuevaPos));
+					break;
+				case 3:
+					break;
+				case 4:
+					AP_Muro* Clon = Cast<AP_Muro>(MuroPrototype->Clone(NuevaPos));
+					break;
+				}
+				
+			}
+		}
+	}
 }

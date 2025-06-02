@@ -71,6 +71,15 @@
     <ClCompile Include="..\..\Source\BomBerman_012025\Private\2do_Parcial\2P_Prototype\Bloque_Prototype.cpp">
       <Filter>Source\BomBerman_012025\Private\2do_Parcial\2P_Prototype</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\2do_Parcial\2P_Prototype\P_Madera.cpp">
+      <Filter>Source\BomBerman_012025\Private\2do_Parcial\2P_Prototype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\2do_Parcial\2P_Prototype\P_Muro.cpp">
+      <Filter>Source\BomBerman_012025\Private\2do_Parcial\2P_Prototype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\2do_Parcial\2P_Prototype\P_Titilante.cpp">
+      <Filter>Source\BomBerman_012025\Private\2do_Parcial\2P_Prototype</Filter>
+    </ClCompile>
     <Filter Include="Source\BomBerman_012025\Private\Bloques">
       <UniqueIdentifier>{E36C403A-653C-3CE8-AFCD-7B3B4A283B58}</UniqueIdentifier>
     </Filter>
@@ -177,6 +186,15 @@
       <UniqueIdentifier>{04D09D4B-6AC9-38C1-B4EA-4D0A3F870771}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\BomBerman_012025\Public\2do_Parcial\2P_Prototype\Bloque_Prototype.h">
+      <Filter>Source\BomBerman_012025\Public\2do_Parcial\2P_Prototype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\2do_Parcial\2P_Prototype\P_Madera.h">
+      <Filter>Source\BomBerman_012025\Public\2do_Parcial\2P_Prototype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\2do_Parcial\2P_Prototype\P_Muro.h">
+      <Filter>Source\BomBerman_012025\Public\2do_Parcial\2P_Prototype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\2do_Parcial\2P_Prototype\P_Titilante.h">
       <Filter>Source\BomBerman_012025\Public\2do_Parcial\2P_Prototype</Filter>
     </ClCompile>
     <Filter Include="Source\BomBerman_012025\Public\Bloques">
