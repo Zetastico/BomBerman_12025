@@ -36,16 +36,34 @@ struct Z_Construct_UClass_AP_Titilante_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Mesh_MetaData[] = {
 		{ "Category", "P_Titilante" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//La malla del bloque\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/2do_Parcial/2P_Prototype/P_Titilante.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "La malla del bloque" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TiempoVisible_MetaData[] = {
 		{ "Category", "P_Titilante" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Tiempo visible del bloque\n" },
+#endif
 		{ "ModuleRelativePath", "Public/2do_Parcial/2P_Prototype/P_Titilante.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Tiempo visible del bloque" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TiempoInvisible_MetaData[] = {
 		{ "Category", "P_Titilante" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Tiempo invisible del bloque\n" },
+#endif
 		{ "ModuleRelativePath", "Public/2do_Parcial/2P_Prototype/P_Titilante.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Tiempo invisible del bloque" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Mesh;
@@ -111,10 +129,10 @@ AP_Titilante::~AP_Titilante() {}
 struct Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_2do_Parcial_2P_Prototype_P_Titilante_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AP_Titilante, AP_Titilante::StaticClass, TEXT("AP_Titilante"), &Z_Registration_Info_UClass_AP_Titilante, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AP_Titilante), 3766041941U) },
+		{ Z_Construct_UClass_AP_Titilante, AP_Titilante::StaticClass, TEXT("AP_Titilante"), &Z_Registration_Info_UClass_AP_Titilante, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AP_Titilante), 268261604U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_2do_Parcial_2P_Prototype_P_Titilante_h_3538760511(TEXT("/Script/BomBerman_012025"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_2do_Parcial_2P_Prototype_P_Titilante_h_3971619763(TEXT("/Script/BomBerman_012025"),
 	Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_2do_Parcial_2P_Prototype_P_Titilante_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_2do_Parcial_2P_Prototype_P_Titilante_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

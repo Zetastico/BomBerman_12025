@@ -28,7 +28,7 @@ protected:
 	UStaticMeshComponent* Mesh;
 
 	//Tamano del bloque
-	float tamanoBloque;
+	float tamanoBloque = 2;
 
 public:	
 	// Called every frame

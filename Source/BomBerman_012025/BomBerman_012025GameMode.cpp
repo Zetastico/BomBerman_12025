@@ -66,6 +66,7 @@ void ABomBerman_012025GameMode::BeginPlay()
 
 		//Asignamos nuevos parametros a un prototipo
 		TitilantePrototype->SetParametros(4.f, 4.0f, 2.0f, true);
+		MaderaPrototype->SetParametros(2.0f);
 
 		//Declaramos los clones
 		AP_Titilante* ClonTitilante;

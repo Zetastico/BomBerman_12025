@@ -36,8 +36,14 @@ struct Z_Construct_UClass_AP_Muro_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Mesh_MetaData[] = {
 		{ "Category", "P_Muro" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Malla del bloque\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/2do_Parcial/2P_Prototype/P_Muro.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Malla del bloque" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Mesh;
@@ -97,10 +103,10 @@ AP_Muro::~AP_Muro() {}
 struct Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_2do_Parcial_2P_Prototype_P_Muro_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AP_Muro, AP_Muro::StaticClass, TEXT("AP_Muro"), &Z_Registration_Info_UClass_AP_Muro, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AP_Muro), 1877206298U) },
+		{ Z_Construct_UClass_AP_Muro, AP_Muro::StaticClass, TEXT("AP_Muro"), &Z_Registration_Info_UClass_AP_Muro, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AP_Muro), 2324404801U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_2do_Parcial_2P_Prototype_P_Muro_h_1825525634(TEXT("/Script/BomBerman_012025"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_2do_Parcial_2P_Prototype_P_Muro_h_2185238110(TEXT("/Script/BomBerman_012025"),
 	Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_2do_Parcial_2P_Prototype_P_Muro_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_2do_Parcial_2P_Prototype_P_Muro_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

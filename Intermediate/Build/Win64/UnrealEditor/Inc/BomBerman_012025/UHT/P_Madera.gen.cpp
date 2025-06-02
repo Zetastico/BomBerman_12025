@@ -36,8 +36,14 @@ struct Z_Construct_UClass_AP_Madera_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Mesh_MetaData[] = {
 		{ "Category", "P_Madera" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Malla del bloque\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/2do_Parcial/2P_Prototype/P_Madera.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Malla del bloque" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Mesh;
@@ -97,10 +103,10 @@ AP_Madera::~AP_Madera() {}
 struct Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_2do_Parcial_2P_Prototype_P_Madera_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AP_Madera, AP_Madera::StaticClass, TEXT("AP_Madera"), &Z_Registration_Info_UClass_AP_Madera, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AP_Madera), 2135727925U) },
+		{ Z_Construct_UClass_AP_Madera, AP_Madera::StaticClass, TEXT("AP_Madera"), &Z_Registration_Info_UClass_AP_Madera, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AP_Madera), 2258454463U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_2do_Parcial_2P_Prototype_P_Madera_h_1708809817(TEXT("/Script/BomBerman_012025"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_2do_Parcial_2P_Prototype_P_Madera_h_3929337487(TEXT("/Script/BomBerman_012025"),
 	Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_2do_Parcial_2P_Prototype_P_Madera_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_2do_Parcial_2P_Prototype_P_Madera_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
