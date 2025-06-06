@@ -3,6 +3,7 @@
 
 #include "2do_Parcial/2P_Builder/Builder_Enemigos_1.h"
 #include "Factory/Enemigo_Factory.h"
+#include "2do_Parcial/2P_Builder/Ejercito_Producto.h"
 // Sets default values
 ABuilder_Enemigos_1::ABuilder_Enemigos_1()
 {
@@ -15,6 +16,7 @@ ABuilder_Enemigos_1::ABuilder_Enemigos_1()
 void ABuilder_Enemigos_1::BeginPlay()
 {
 	Super::BeginPlay();
+	EjercitoConstruido = GetWorld()->SpawnActor<AEjercito_Producto>(AEjercito_Producto::StaticClass());
 	
 }
 
@@ -43,6 +45,11 @@ void ABuilder_Enemigos_1::ColocarEnemigosRapido(FVector pos)
 void ABuilder_Enemigos_1::SetFabrica(AEnemigo_Factory* NuevaFabrica)
 {
 	Fabrica = NuevaFabrica;
+}
+
+AEjercitoProducto* ABuilder_Enemigos_1::GetEjercito()
+{
+	return nullptr;
 }
 
 

@@ -32,4 +32,6 @@ public:
 	//Set the Builder Actor
 	void EstablecerBuilder(AActor* Builder_Enemigos);
 
+	class AEjercito_Producto* GetEjercito();
+
 };

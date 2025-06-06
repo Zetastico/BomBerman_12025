@@ -23,5 +23,7 @@ public:
 	virtual void ColocarEnemigosRapido(FVector pos) = 0;
 	virtual void SetFabrica(class AEnemigo_Factory* NuevaFabrica) = 0;
 
+	virtual class AEjercitoProducto* GetEjercito() = 0;
+
 
 };

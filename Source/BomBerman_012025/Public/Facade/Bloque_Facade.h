@@ -19,23 +19,30 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	//Creamos el factory que se encargara de crear las bombas
 	AFactory_Main* Factory;
+	//Creamos el builder que se encargara de construir el mapa
 	ABuilder_Main* Builder;
 
 private:
 	UPROPERTY(VisibleAnywhere)
+	// Componente de colisión que detecta el overlap
 	class UBoxComponent* TriggerBox;
 
+	// Método que se llama cuando comienza el overlap
 	UFUNCTION()
 	void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 		UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,
 		bool bFromSweep, const FHitResult& SweepResult);
 
+	//Los diferentes niveles que se pueden activar
 	void Activar_Nivel_Facil();
 	void Activar_Nivel_Medio();
 	void Activar_Nivel_Dificil();
 
-	bool bActivado = false;  // En el .h
+	// Variable para controlar si el bloque ya ha sido activado
+	bool bActivado = false;
 
+	//Malla del bloque
 	UStaticMeshComponent* Mesh;
 };

@@ -27,6 +27,11 @@ public:
 	virtual void ColocarEnemigoComandante(FVector pos) override;
 	virtual void ColocarEnemigosRapido(FVector pos) override;
 	virtual void SetFabrica(class AEnemigo_Factory* NuevaFabrica) override;
+	virtual class AEjercitoProducto* GetEjercito() override;
+
+	UPROPERTY()
+	class AEjercito_Producto* EjercitoConstruido;
+
 
 	UPROPERTY()
 	class AEnemigo_Factory* Fabrica;

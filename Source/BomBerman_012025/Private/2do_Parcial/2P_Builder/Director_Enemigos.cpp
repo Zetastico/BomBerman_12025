@@ -72,3 +72,8 @@ void ADirector_Enemigos::EstablecerBuilder(AActor* Builder_Enemigos)
 	}
 }
 
+AEjercito_Producto* ADirector_Enemigos::GetEjercito()
+{
+	return nullptr;
+}
+

@@ -7,6 +7,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Propotype/Bomba_Prototype.h"
 #include "Propotype/Multi_bomba.h"
+#include "Facade/Bloque_Facade.h"
 #include "2do_Parcial/2P_Prototype/Bloque_Prototype.h"	
 #include "2do_Parcial/2P_Prototype/P_Muro.h"
 #include "2do_Parcial/2P_Prototype/P_Madera.h"
@@ -44,8 +45,16 @@ void ABomBerman_012025GameMode::BeginPlay()
 		Datos.TiempoParaExplotar = 10.0f;
 		Datos.RangoExplosion = 200.0f;
 		FActorSpawnParameters Params;
-		FVector Posicion = FVector(1000, 1000, 100); // Donde quieras colocarla
+		FVector Posicion = FVector(1000, 1000, -10); // Donde quieras colocarla
 
+		//-----------------------------------------------Facade------------------------------------------------
+		// Spawneamos el bloque facade
+		ABloque_Facade* BloqueFacade = World->SpawnActor<ABloque_Facade>(ABloque_Facade::StaticClass(), Posicion, FRotator::ZeroRotator, Params);
+
+		/*
+		* 
+		* 
+		* 
 		AMulti_Bomba* BombaPrototype = World->SpawnActor<AMulti_Bomba>(AMulti_Bomba::StaticClass(), Posicion, FRotator::ZeroRotator, Params);
 		if (BombaPrototype)
 		{
@@ -53,9 +62,7 @@ void ABomBerman_012025GameMode::BeginPlay()
 			BombaPrototype->Clone();
 		}
 
-		
-
-		//-----------------------------------------------PROTOTYPE------------------------------------------------
+				//-----------------------------------------------PROTOTYPE------------------------------------------------
 		//Posicion de los bloques prototipos
 		FVector PosicionInicial = FVector(0, 0, 0);
 
@@ -77,46 +84,67 @@ void ABomBerman_012025GameMode::BeginPlay()
 
 		int opcion;
 
-		// Generamos un mapa de bloques clonando el original
-		//Usando un array bidimensional para definir el mapa
+		TArray<TArray<int>> mapaOpciones;
+		mapaOpciones.SetNum(arrayMapaBloques2.Num());
+		for (int i = 0; i < arrayMapaBloques2.Num(); ++i)
+		{
+			mapaOpciones[i].SetNum(arrayMapaBloques2[i].Num());
+		}
+
+		//Mapa Aleatorio derecha
 		for (int Fila = 0; Fila < arrayMapaBloques2.Num(); ++Fila)
 		{
-			for (int Columna = 0; Columna < arrayMapaBloques2[Fila].Num(); ++Columna)
+			for (int Columna = arrayMapaBloques2[Fila].Num() / 2; Columna < arrayMapaBloques2[Fila].Num(); ++Columna)
 			{
 				FVector NuevaPos = FVector(Fila * 200, Columna * 200, 0);
-				// El original ya se colocó en la primera posición
-				if (Fila == 0 && Columna == 0)
-				{
-					MuroPrototype->SetActorLocation(NuevaPos);
-					continue;
-				}
-				//Creamos la mitad del mapa normal
-				if (Columna < arrayMapaBloques2.Num()/2) {
-					opcion = arrayMapaBloques2[Fila][Columna];
-				}
-				//Creamos la mitad del mapa aleatorio
-				else {
-					opcion = FMath::RandRange(0, 4);
-				}
-				//Clonamos el bloque correspondiente según la opción
-				switch (opcion) {
-				case 0:
-					break;
-				case 1:
 
+				opcion = FMath::RandRange(0, 4);
+				mapaOpciones[Fila][Columna] = opcion;
+
+				switch (opcion)
+				{
+				case 1:
 					ClonTitilante = Cast<AP_Titilante>(TitilantePrototype->Clone(NuevaPos));
 					break;
 				case 2:
 					ClonMadera = Cast<AP_Madera>(MaderaPrototype->Clone(NuevaPos));
 					break;
-				case 3:
+				case 4:
+					ClonMuro = Cast<AP_Muro>(MuroPrototype->Clone(NuevaPos));
+					break;
+				}
+			}
+		}
+
+		//Mapa Clonado
+		for (int Fila = 0; Fila < arrayMapaBloques2.Num(); ++Fila)
+		{
+			for (int Columna = 0; Columna < arrayMapaBloques2[Fila].Num() / 2; ++Columna)
+			{
+				FVector NuevaPos = FVector(Fila * 200, Columna * 200, 0);
+
+				int ColumnaOrigen = Columna + arrayMapaBloques2[Fila].Num() / 2;
+				opcion = mapaOpciones[Fila][ColumnaOrigen];
+
+				mapaOpciones[Fila][Columna] = opcion;
+
+				switch (opcion)
+				{
+				case 1:
+					ClonTitilante = Cast<AP_Titilante>(TitilantePrototype->Clone(NuevaPos));
+					break;
+				case 2:
+					ClonMadera = Cast<AP_Madera>(MaderaPrototype->Clone(NuevaPos));
 					break;
 				case 4:
 					ClonMuro = Cast<AP_Muro>(MuroPrototype->Clone(NuevaPos));
 					break;
 				}
-				
 			}
 		}
+		MuroPrototype->SetActorLocation(FVector(0, 0, 0));
 	}
+		*/
+	}
+
 }

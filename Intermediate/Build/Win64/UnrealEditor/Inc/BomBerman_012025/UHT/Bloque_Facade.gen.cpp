@@ -35,7 +35,13 @@ struct Z_Construct_UFunction_ABloque_Facade_OnOverlapBegin_Statics
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// M\xef\xbf\xbdtodo que se llama cuando comienza el overlap\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Facade/Bloque_Facade.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "M\xef\xbf\xbdtodo que se llama cuando comienza el overlap" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OverlappedComp_MetaData[] = {
 		{ "EditInline", "true" },
@@ -125,15 +131,21 @@ struct Z_Construct_UClass_ABloque_Facade_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TriggerBox_MetaData[] = {
 		{ "Category", "Bloque_Facade" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Componente de colisi\xef\xbf\xbdn que detecta el overlap\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Facade/Bloque_Facade.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Componente de colisi\xef\xbf\xbdn que detecta el overlap" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TriggerBox;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_ABloque_Facade_OnOverlapBegin, "OnOverlapBegin" }, // 551114212
+		{ &Z_Construct_UFunction_ABloque_Facade_OnOverlapBegin, "OnOverlapBegin" }, // 2062451700
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -186,10 +198,10 @@ ABloque_Facade::~ABloque_Facade() {}
 struct Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Facade_Bloque_Facade_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABloque_Facade, ABloque_Facade::StaticClass, TEXT("ABloque_Facade"), &Z_Registration_Info_UClass_ABloque_Facade, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABloque_Facade), 3297000253U) },
+		{ Z_Construct_UClass_ABloque_Facade, ABloque_Facade::StaticClass, TEXT("ABloque_Facade"), &Z_Registration_Info_UClass_ABloque_Facade, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABloque_Facade), 384939767U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Facade_Bloque_Facade_h_1696238103(TEXT("/Script/BomBerman_012025"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Facade_Bloque_Facade_h_2090543864(TEXT("/Script/BomBerman_012025"),
 	Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Facade_Bloque_Facade_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Facade_Bloque_Facade_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

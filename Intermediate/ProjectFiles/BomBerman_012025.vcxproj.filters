@@ -80,6 +80,9 @@
     <ClCompile Include="..\..\Source\BomBerman_012025\Private\2do_Parcial\2P_Builder\Director_Enemigos.cpp">
       <Filter>Source\BomBerman_012025\Private\2do_Parcial\2P_Builder</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\2do_Parcial\2P_Builder\Ejercito_Producto.cpp">
+      <Filter>Source\BomBerman_012025\Private\2do_Parcial\2P_Builder</Filter>
+    </ClCompile>
     <Filter Include="Source\BomBerman_012025\Private\2do_Parcial\2P_Prototype">
       <UniqueIdentifier>{01512735-1F69-3854-A431-C5B841CC9A64}</UniqueIdentifier>
     </Filter>
@@ -216,6 +219,9 @@
       <Filter>Source\BomBerman_012025\Public\2do_Parcial\2P_Builder</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Public\2do_Parcial\2P_Builder\Director_Enemigos.h">
+      <Filter>Source\BomBerman_012025\Public\2do_Parcial\2P_Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\2do_Parcial\2P_Builder\Ejercito_Producto.h">
       <Filter>Source\BomBerman_012025\Public\2do_Parcial\2P_Builder</Filter>
     </ClCompile>
     <Filter Include="Source\BomBerman_012025\Public\2do_Parcial\2P_Prototype">

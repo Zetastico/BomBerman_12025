@@ -4,7 +4,7 @@
 #include "2do_Parcial/2P_Builder/Builder_Enemigos_Main.h"
 #include "2do_Parcial/2P_Builder/Director_Enemigos.h"
 #include "2do_Parcial/2P_Builder/Builder_Enemigos_1.h"
-
+#include "2do_Parcial/2P_Builder/Ejercito_Producto.h"
 // Sets default values
 ABuilder_Enemigos_Main::ABuilder_Enemigos_Main()
 {
