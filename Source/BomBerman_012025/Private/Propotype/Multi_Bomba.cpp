@@ -5,10 +5,6 @@
 #include "Kismet/GameplayStatics.h"
 #include "BloqueBase.h"
 #include "Propotype/Bomba_Prototype.h"
-// Sets default values
-#include "Propotype/Multi_Bomba.h"
-#include "Kismet/GameplayStatics.h"
-#include "BloqueBase.h"
 #include "NiagaraFunctionLibrary.h"
 #include "Engine/World.h"
 
@@ -47,6 +43,7 @@ void AMulti_Bomba::BeginPlay()
 	PrepararExplosion();
 }
 
+//Aplica los datos a la bomba
 void AMulti_Bomba::AplicarDatos(const FBombaData& Datos)
 {
 	DatosBomba = Datos;
@@ -57,6 +54,7 @@ void AMulti_Bomba::PrepararExplosion()
 	GetWorld()->GetTimerManager().SetTimer(TimerHandle_Explosion, this, &AMulti_Bomba::Explotar, DatosBomba.TiempoParaExplotar, false);
 }
 
+//Metodo clonar
 UBomba_Prototype* AMulti_Bomba::Clone() const
 {
 	UWorld* World = GetWorld();
@@ -64,12 +62,15 @@ UBomba_Prototype* AMulti_Bomba::Clone() const
 
 	FActorSpawnParameters SpawnParams;
 
-	FVector NuevaPos = GetActorLocation() + FVector(100, 0, 0); // posición arbitraria para prueba
+	//Lo colocamos en un lado de la bomba
+	FVector NuevaPos = GetActorLocation() + FVector(100, 0, 0); 
 
+	// Spawneamos una nueva bomba en la posición deseada
 	AMulti_Bomba* NuevaBomba = World->SpawnActor<AMulti_Bomba>(GetClass(), NuevaPos, GetActorRotation(), SpawnParams);
 	if (NuevaBomba)
 	{
-		NuevaBomba->AplicarDatos(DatosBomba); // ✅ clonar datos automáticamente
+		//Asigna los datos de la bomba prototype
+		NuevaBomba->AplicarDatos(DatosBomba);
 	}
 
 	return Cast<UBomba_Prototype>(NuevaBomba);

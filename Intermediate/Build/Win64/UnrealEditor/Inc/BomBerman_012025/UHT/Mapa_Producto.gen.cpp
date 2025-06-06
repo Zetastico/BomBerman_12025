@@ -34,7 +34,13 @@ struct Z_Construct_UClass_AMapa_Producto_Statics
 		{ "ModuleRelativePath", "Public/Builder/Mapa_Producto.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Bloques_MetaData[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Lista de bloques que componen el mapa\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Builder/Mapa_Producto.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Lista de bloques que componen el mapa" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Bloques_Inner;
@@ -93,10 +99,10 @@ AMapa_Producto::~AMapa_Producto() {}
 struct Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Mapa_Producto_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMapa_Producto, AMapa_Producto::StaticClass, TEXT("AMapa_Producto"), &Z_Registration_Info_UClass_AMapa_Producto, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMapa_Producto), 559891275U) },
+		{ Z_Construct_UClass_AMapa_Producto, AMapa_Producto::StaticClass, TEXT("AMapa_Producto"), &Z_Registration_Info_UClass_AMapa_Producto, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMapa_Producto), 3976805617U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Mapa_Producto_h_4143031051(TEXT("/Script/BomBerman_012025"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Mapa_Producto_h_2005444988(TEXT("/Script/BomBerman_012025"),
 	Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Mapa_Producto_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Mapa_Producto_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

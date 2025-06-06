@@ -42,9 +42,6 @@ void ABomBerman_012025GameMode::BeginPlay()
 	UWorld* World = GetWorld();
 	if (World)
 	{
-		FBombaData Datos;
-		Datos.TiempoParaExplotar = 10.0f;
-		Datos.RangoExplosion = 200.0f;
 		FActorSpawnParameters Params;
 		FVector Posicion = FVector(1000, 1000, -10); // Donde quieras colocarla
 
@@ -56,17 +53,23 @@ void ABomBerman_012025GameMode::BeginPlay()
 		//-----------------------------------------------Builder-----------------------------------------------
 		ABuilder_Main* Builder = World->SpawnActor<ABuilder_Main>(ABuilder_Main::StaticClass(), Posicion, FRotator::ZeroRotator, Params);
 		Builder->ConstrirMapaDificil();
-		/*
-		* 
-		* 
-		* 
+
+		//-----------------------------------------------Prototype---------------------------------------------
+		//Datos de la bomba
+		FBombaData Datos;
+		Datos.TiempoParaExplotar = 10.0f;
+		Datos.RangoExplosion = 20.0f;
+		FVector PosicionBomba = FVector(1100, 1100, -10); // Donde quieras colocarla
+		// Spawneamos la bomba prototipo
 		AMulti_Bomba* BombaPrototype = World->SpawnActor<AMulti_Bomba>(AMulti_Bomba::StaticClass(), Posicion, FRotator::ZeroRotator, Params);
 		if (BombaPrototype)
 		{
+			//Aplicamos los nuevos datos a la bomba prototipo
 			BombaPrototype->AplicarDatos(Datos);
+			//Clonamos la bomba prototipo
 			BombaPrototype->Clone();
 		}
-
+		/*
 				//-----------------------------------------------PROTOTYPE------------------------------------------------
 		//Posicion de los bloques prototipos
 		FVector PosicionInicial = FVector(0, 0, 0);

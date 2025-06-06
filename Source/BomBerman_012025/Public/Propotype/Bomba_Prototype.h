@@ -17,6 +17,6 @@ class BOMBERMAN_012025_API IBomba_Prototype
 	GENERATED_BODY()
 	
 public:	
-	// Sets default values for this actor's properties
+	//Metodo clonar que tendran las clases designadas
 	virtual UBomba_Prototype* Clone() const = 0;
 };

@@ -11,10 +11,10 @@ USTRUCT(BlueprintType)
 struct FBombaData
 {
 	GENERATED_BODY()
-
+	//atributo del tiempo para explotar
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float TiempoParaExplotar = 2.0f;
-
+	//Atributo para el rango de la bomba
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float RangoExplosion = 3.0f;
 };
@@ -28,14 +28,19 @@ public:
 	// Sets default values for this actor's properties
 	AMulti_Bomba();
 
+	//Metodo clonar de la interfaz
 	virtual UBomba_Prototype* Clone() const override;
 
+	//Metodo para aplicar los datos de la bomba desde otra bomba
 	void AplicarDatos(const FBombaData& Datos);
+
+	//Metodo para obtener los datos de la bomba
 	const FBombaData& ObtenerDatos() const { return DatosBomba; }
 
 protected:
 	virtual void BeginPlay() override;
 
+	//Atributos para la bomba
 	UPROPERTY(EditAnywhere)
 	UStaticMeshComponent* Mesh;
 
@@ -47,6 +52,7 @@ protected:
 
 	FTimerHandle TimerHandle_Explosion;
 
+	//Metodos propios de la bomba
 	void PrepararExplosion();
 	void Explotar();
 	void ExplorarEnDireccion(FVector Direccion);

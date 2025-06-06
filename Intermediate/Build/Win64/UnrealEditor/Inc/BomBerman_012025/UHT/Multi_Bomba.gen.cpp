@@ -43,11 +43,23 @@ struct Z_Construct_UScriptStruct_FBombaData_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TiempoParaExplotar_MetaData[] = {
 		{ "Category", "BombaData" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//atributo del tiempo para explotar\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Propotype/Multi_Bomba.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "atributo del tiempo para explotar" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RangoExplosion_MetaData[] = {
 		{ "Category", "BombaData" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Atributo para el rango de la bomba\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Propotype/Multi_Bomba.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Atributo para el rango de la bomba" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_TiempoParaExplotar;
@@ -107,8 +119,14 @@ struct Z_Construct_UClass_AMulti_Bomba_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Mesh_MetaData[] = {
 		{ "Category", "Multi_Bomba" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Atributos para la bomba\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Propotype/Multi_Bomba.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Atributos para la bomba" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EfectoExplosion_MetaData[] = {
 		{ "Category", "Multi_Bomba" },
@@ -132,7 +150,7 @@ struct Z_Construct_UClass_AMulti_Bomba_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMulti_Bomba_Statics::NewProp_Mesh = { "Mesh", nullptr, (EPropertyFlags)0x0020080000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMulti_Bomba, Mesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Mesh_MetaData), NewProp_Mesh_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMulti_Bomba_Statics::NewProp_EfectoExplosion = { "EfectoExplosion", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMulti_Bomba, EfectoExplosion), Z_Construct_UClass_UNiagaraSystem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EfectoExplosion_MetaData), NewProp_EfectoExplosion_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AMulti_Bomba_Statics::NewProp_DatosBomba = { "DatosBomba", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMulti_Bomba, DatosBomba), Z_Construct_UScriptStruct_FBombaData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DatosBomba_MetaData), NewProp_DatosBomba_MetaData) }; // 734284689
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AMulti_Bomba_Statics::NewProp_DatosBomba = { "DatosBomba", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMulti_Bomba, DatosBomba), Z_Construct_UScriptStruct_FBombaData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DatosBomba_MetaData), NewProp_DatosBomba_MetaData) }; // 1569103035
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMulti_Bomba_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMulti_Bomba_Statics::NewProp_Mesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMulti_Bomba_Statics::NewProp_EfectoExplosion,
@@ -182,13 +200,13 @@ AMulti_Bomba::~AMulti_Bomba() {}
 struct Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Propotype_Multi_Bomba_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FBombaData::StaticStruct, Z_Construct_UScriptStruct_FBombaData_Statics::NewStructOps, TEXT("BombaData"), &Z_Registration_Info_UScriptStruct_BombaData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FBombaData), 734284689U) },
+		{ FBombaData::StaticStruct, Z_Construct_UScriptStruct_FBombaData_Statics::NewStructOps, TEXT("BombaData"), &Z_Registration_Info_UScriptStruct_BombaData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FBombaData), 1569103035U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMulti_Bomba, AMulti_Bomba::StaticClass, TEXT("AMulti_Bomba"), &Z_Registration_Info_UClass_AMulti_Bomba, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMulti_Bomba), 1222465432U) },
+		{ Z_Construct_UClass_AMulti_Bomba, AMulti_Bomba::StaticClass, TEXT("AMulti_Bomba"), &Z_Registration_Info_UClass_AMulti_Bomba, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMulti_Bomba), 1013437498U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Propotype_Multi_Bomba_h_621290029(TEXT("/Script/BomBerman_012025"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Propotype_Multi_Bomba_h_1023445642(TEXT("/Script/BomBerman_012025"),
 	Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Propotype_Multi_Bomba_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Propotype_Multi_Bomba_h_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Propotype_Multi_Bomba_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Propotype_Multi_Bomba_h_Statics::ScriptStructInfo),
 	nullptr, 0);
