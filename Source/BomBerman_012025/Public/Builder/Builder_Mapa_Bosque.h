@@ -25,6 +25,7 @@ public:
 
 	// Crear instancia de mapa (Actor, UObject, lo que uses)
 
+	//Metodos de la interfaz que construye el mapa
 	virtual void ConstruirMuros(FVector pos) override;
 	virtual void ConstruirBloques(FVector pos) override;
 	virtual void ConstruirPuertas(FVector pos) override;
@@ -33,13 +34,16 @@ public:
 
 private:
 
+	//Producto del Builder
 	UPROPERTY()
 	class AMapa_Producto* MapaConstruido;
 
+	//Factory que se encargara de crear los bloques
 	UPROPERTY()
 	class AMapa_Factory* Fabrica;
 
 public:
 
+	// Asignamos que fabrica (factory) va a usar el builder
 	virtual void SetFabrica(AMapa_Factory* NuevaFabrica) override;
 };

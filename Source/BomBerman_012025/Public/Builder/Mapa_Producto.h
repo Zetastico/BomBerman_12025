@@ -23,9 +23,12 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	// Método para añadir un bloque al mapa
 	void AnadirBloque(ABloqueBase* NuevoBloque);
+
 
 private:
 	UPROPERTY()
+	// Lista de bloques que componen el mapa
 	TArray<ABloqueBase*> Bloques;
 };

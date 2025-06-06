@@ -8,6 +8,7 @@
 #include "Propotype/Bomba_Prototype.h"
 #include "Propotype/Multi_bomba.h"
 #include "Facade/Bloque_Facade.h"
+#include "Builder/Builder_Main.h"
 #include "2do_Parcial/2P_Prototype/Bloque_Prototype.h"	
 #include "2do_Parcial/2P_Prototype/P_Muro.h"
 #include "2do_Parcial/2P_Prototype/P_Madera.h"
@@ -51,6 +52,10 @@ void ABomBerman_012025GameMode::BeginPlay()
 		// Spawneamos el bloque facade
 		ABloque_Facade* BloqueFacade = World->SpawnActor<ABloque_Facade>(ABloque_Facade::StaticClass(), Posicion, FRotator::ZeroRotator, Params);
 
+
+		//-----------------------------------------------Builder-----------------------------------------------
+		ABuilder_Main* Builder = World->SpawnActor<ABuilder_Main>(ABuilder_Main::StaticClass(), Posicion, FRotator::ZeroRotator, Params);
+		Builder->ConstrirMapaDificil();
 		/*
 		* 
 		* 

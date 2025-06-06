@@ -36,10 +36,22 @@ struct Z_Construct_UClass_ABuilder_Mapa_Bosque_Statics
 		{ "ModuleRelativePath", "Public/Builder/Builder_Mapa_Bosque.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MapaConstruido_MetaData[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Producto del Builder\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Builder/Builder_Mapa_Bosque.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Producto del Builder" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Fabrica_MetaData[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Factory que se encargara de crear los bloques\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Builder/Builder_Mapa_Bosque.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Factory que se encargara de crear los bloques" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MapaConstruido;
@@ -102,10 +114,10 @@ ABuilder_Mapa_Bosque::~ABuilder_Mapa_Bosque() {}
 struct Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Mapa_Bosque_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABuilder_Mapa_Bosque, ABuilder_Mapa_Bosque::StaticClass, TEXT("ABuilder_Mapa_Bosque"), &Z_Registration_Info_UClass_ABuilder_Mapa_Bosque, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABuilder_Mapa_Bosque), 2042652965U) },
+		{ Z_Construct_UClass_ABuilder_Mapa_Bosque, ABuilder_Mapa_Bosque::StaticClass, TEXT("ABuilder_Mapa_Bosque"), &Z_Registration_Info_UClass_ABuilder_Mapa_Bosque, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABuilder_Mapa_Bosque), 2843382198U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Mapa_Bosque_h_1548427145(TEXT("/Script/BomBerman_012025"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Mapa_Bosque_h_1772454750(TEXT("/Script/BomBerman_012025"),
 	Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Mapa_Bosque_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Mapa_Bosque_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

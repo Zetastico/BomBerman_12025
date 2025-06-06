@@ -23,21 +23,27 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+
+	//Metodos para crear los diferentes mapas
 	void ConstrirMapaFacil();
 	void ConstrirMapaMedio();
 	void ConstrirMapaDificil();
 
 private:
 
+	//Crea el director de nuestro builder
 	UPROPERTY(VisibleAnywhere, Category = "Main")
 	class ADirector_Builder* DirectorBuilder;
 
+	//Crea el builder especifico para el mapa de bosque
 	UPROPERTY(VisibleAnywhere, Category = "Main")
 	class ABuilder_Mapa_Bosque* BuilderMapaBosque;
 
+	//Crea el factory que se encargara de crear los enemigos
 	UPROPERTY(VisibleAnywhere, Category = "Main")
 	class AEnemigo_Factory* FabricaEnemigo;
 
+	//Array del Mapa Facil
 	TArray<TArray<int>> ArrayMapa1 = {
 									{4,4,4,4,4,4,4,4,4,4,4,4},
 									{4,1,0,4,2,0,2,0,4,0,1,4},
@@ -52,6 +58,7 @@ private:
 									{4,0,0,0,0,0,0,0,0,0,0,4},
 									{4,4,4,4,4,4,4,4,4,4,4,4}};
 
+	//Array del Mapa Medio
 	TArray<TArray<int>> ArrayMapa2 = {
 									{4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4},
 									{4,1,0,4,2,0,2,0,4,0,1,4,4,1,0,4,2,0,2,0,4,0,1,4},
@@ -66,6 +73,7 @@ private:
 									{4,0,0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0,0,0,0,0,0,4},
 									{4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4}};
 
+	//Array del Mapa Dificil
 	TArray<TArray<int>> ArrayMapa3 = {
 									{4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4},
 									{4,0,0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0,0,0,0,0,0,4},

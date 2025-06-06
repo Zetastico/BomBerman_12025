@@ -18,12 +18,15 @@ class BOMBERMAN_012025_API IBuilder_Mapa
 
 public:
 
+	//Metodos que construyen los diferentes elementos del mapa
 	virtual void ConstruirMuros(FVector pos) = 0;
 	virtual void ConstruirBloques(FVector pos) = 0;
 	virtual void ConstruirPuertas(FVector pos) = 0;
 	virtual void ConstruirObstaculos(FVector pos) = 0;
 
+	//Asignamos que fabrica (factory) va a usar el builder
 	virtual void SetFabrica(AMapa_Factory* NuevaFabrica) = 0;
 
+	//Nos da el producto, en este caso el mapa
 	virtual class AMapa_Producto* GetMapa() = 0;
 };

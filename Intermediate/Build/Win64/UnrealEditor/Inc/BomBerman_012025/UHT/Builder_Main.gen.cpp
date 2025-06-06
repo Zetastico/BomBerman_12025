@@ -37,15 +37,33 @@ struct Z_Construct_UClass_ABuilder_Main_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DirectorBuilder_MetaData[] = {
 		{ "Category", "Main" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Crea el director de nuestro builder\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Builder/Builder_Main.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Crea el director de nuestro builder" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BuilderMapaBosque_MetaData[] = {
 		{ "Category", "Main" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Crea el builder especifico para el mapa de bosque\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Builder/Builder_Main.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Crea el builder especifico para el mapa de bosque" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FabricaEnemigo_MetaData[] = {
 		{ "Category", "Main" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Crea el factory que se encargara de crear los enemigos\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Builder/Builder_Main.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Crea el factory que se encargara de crear los enemigos" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DirectorBuilder;
@@ -107,10 +125,10 @@ ABuilder_Main::~ABuilder_Main() {}
 struct Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Main_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABuilder_Main, ABuilder_Main::StaticClass, TEXT("ABuilder_Main"), &Z_Registration_Info_UClass_ABuilder_Main, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABuilder_Main), 1035432517U) },
+		{ Z_Construct_UClass_ABuilder_Main, ABuilder_Main::StaticClass, TEXT("ABuilder_Main"), &Z_Registration_Info_UClass_ABuilder_Main, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABuilder_Main), 3096669124U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Main_h_131039978(TEXT("/Script/BomBerman_012025"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Main_h_2052398610(TEXT("/Script/BomBerman_012025"),
 	Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Main_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Builder_Builder_Main_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

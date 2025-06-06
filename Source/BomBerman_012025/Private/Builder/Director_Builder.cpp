@@ -30,6 +30,7 @@ void ADirector_Builder::Tick(float DeltaTime)
 
 void ADirector_Builder::ConstruirMapa(TArray<TArray<int>> Mapa, int N_Enemigos)
 {
+	//Construye el mapa usando el Builder y la Fabrica de Enemigos
 	if (BuilderMapa) //Check if BuilderMapa is not null
 	{
 		AMapa_Factory* Fabrica = GetWorld()->SpawnActor<AMapa_Factory>();
@@ -80,6 +81,7 @@ void ADirector_Builder::ConstruirMapa(TArray<TArray<int>> Mapa, int N_Enemigos)
 
 void ADirector_Builder::EstablecerBuilder(AActor* Builder_Mapa, AActor* Factory_Enemigo)
 {
+	//Establece el Builder y la Fabrica de Enemigos
 	BuilderMapa = Cast<IBuilder_Mapa>(Builder_Mapa);
 	if (!BuilderMapa) //Log Error if cast fails
 	{
@@ -88,11 +90,12 @@ void ADirector_Builder::EstablecerBuilder(AActor* Builder_Mapa, AActor* Factory_
 	FabricaEnemigo = Cast<AEnemigo_Factory>(Factory_Enemigo);
 }
 
+//Nos da el mapa generado
 AMapa_Producto* ADirector_Builder::GetMapa()
 {
 	if (BuilderMapa)
 	{
-		//Returns the Lodging of the Builder
+		//Devuelve el mapa
 		return BuilderMapa->GetMapa();
 	}
 	//Log if the Builder is NULL

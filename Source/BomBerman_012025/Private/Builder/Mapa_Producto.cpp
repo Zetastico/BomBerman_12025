@@ -25,6 +25,7 @@ void AMapa_Producto::Tick(float DeltaTime)
 
 }
 
+//Metodo para guardar todos los bloques generados
 void AMapa_Producto::AnadirBloque(ABloqueBase* NuevoBloque)
 {
 

@@ -28,47 +28,60 @@ void ABuilder_Main::Tick(float DeltaTime)
 
 }
 
+//Construye el mapa fácil
 void ABuilder_Main::ConstrirMapaFacil()
 {
-	// Initialize the Director Builder
+	//Crea el director
 	DirectorBuilder = GetWorld()->SpawnActor<ADirector_Builder>(ADirector_Builder::StaticClass());
+	//Crea el builder especifico para el mapa de bosque
 	BuilderMapaBosque = GetWorld()->SpawnActor<ABuilder_Mapa_Bosque>(ABuilder_Mapa_Bosque::StaticClass());
+	//Crea la fabrica de enemigos
 	FabricaEnemigo = GetWorld()->SpawnActor<AEnemigo_Factory>(AEnemigo_Factory::StaticClass());
 
+	//Asignamos el builder y fabrica a nuestro director
 	DirectorBuilder->EstablecerBuilder(BuilderMapaBosque, FabricaEnemigo);
+	//Le decimos a nuestro director que construya el mapa con un array especifico y cantidad de enemigos
 	DirectorBuilder->ConstruirMapa(ArrayMapa1, 5);
 
-
+	//Nos devuelve el producto de nuestro builder, que es nuestro mapa
 	AMapa_Producto* MapaProducto = DirectorBuilder->GetMapa();
 }
 
+//Construye el mapa medio
 void ABuilder_Main::ConstrirMapaMedio()
 {
-	// Initialize the Director Builder
+	//Crea el director
 	DirectorBuilder = GetWorld()->SpawnActor<ADirector_Builder>(ADirector_Builder::StaticClass());
+	//Crea el builder especifico para el mapa de bosque
 	BuilderMapaBosque = GetWorld()->SpawnActor<ABuilder_Mapa_Bosque>(ABuilder_Mapa_Bosque::StaticClass());
+	//Crea la fabrica de enemigos
 	FabricaEnemigo = GetWorld()->SpawnActor<AEnemigo_Factory>(AEnemigo_Factory::StaticClass());
 
-
+	//Asignamos el builder y fabrica a nuestro director
 	DirectorBuilder->EstablecerBuilder(BuilderMapaBosque, FabricaEnemigo);
+	//Le decimos a nuestro director que construya el mapa con un array especifico y cantidad de enemigos
 	DirectorBuilder->ConstruirMapa(ArrayMapa2, 10);
 
-
+	//Nos devuelve el producto de nuestro builder, que es nuestro mapa
 	AMapa_Producto* MapaProducto = DirectorBuilder->GetMapa();
 }
 
+//Construye el mapa Dificl
 void ABuilder_Main::ConstrirMapaDificil()
 {
-	// Initialize the Director Builder
+	//Crea el director
 	DirectorBuilder = GetWorld()->SpawnActor<ADirector_Builder>(ADirector_Builder::StaticClass());
+	//Crea el builder especifico para el mapa de bosque
 	BuilderMapaBosque = GetWorld()->SpawnActor<ABuilder_Mapa_Bosque>(ABuilder_Mapa_Bosque::StaticClass());
+	//Crea la fabrica de enemigos
 	FabricaEnemigo = GetWorld()->SpawnActor<AEnemigo_Factory>(AEnemigo_Factory::StaticClass());
 
-
+	//Asignamos el builder y fabrica a nuestro director
 	DirectorBuilder->EstablecerBuilder(BuilderMapaBosque, FabricaEnemigo);
+	//Le decimos a nuestro director que construya el mapa con un array especifico y cantidad de enemigos
 	DirectorBuilder->ConstruirMapa(ArrayMapa3, 20);
 
-
+	//Nos devuelve el producto de nuestro builder, que es nuestro mapa
 	AMapa_Producto* MapaProducto = DirectorBuilder->GetMapa();
 }
 
