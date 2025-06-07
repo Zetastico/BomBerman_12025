@@ -23,5 +23,6 @@ public:
 	// Called every frame0
 	virtual void Tick(float DeltaTime) override;
 
+	//Crea el bloque de un tipo especifico y en una ubicación específica
 	ABloqueBase* CrearBloque(FString tipo, FVector Pos);
 };

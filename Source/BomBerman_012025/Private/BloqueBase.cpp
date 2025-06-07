@@ -25,3 +25,7 @@ void ABloqueBase::Tick(float DeltaTime)
 
 }
 
+void ABloqueBase::DestruirBloque()
+{
+}
+

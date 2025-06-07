@@ -23,6 +23,8 @@ ABloqueTitilante::ABloqueTitilante()
 
 void ABloqueTitilante::BeginPlay()
 {
+	Super::BeginPlay();
+	bEsDestructible = true;
 	GetWorldTimerManager().SetTimer(TimerHandle_Disappear, this, &ABloqueTitilante::OcultarBloque, 4.5f, false);
 }
 
@@ -42,4 +44,17 @@ void ABloqueTitilante::MostrarBloque()
 
 	// Reiniciar el ciclo
 	GetWorldTimerManager().SetTimer(TimerHandle_Disappear, this, &ABloqueTitilante::OcultarBloque, TiempoVisible, false);
+}
+
+void ABloqueTitilante::DestruirBloque()
+{
+	if (bEsDestructible)
+	{
+		// Destruir el bloque después de un pequeño retardo (por ejemplo, 0.1 segundos)
+		Destroy();
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Este bloque no es destructible."));
+	}
 }

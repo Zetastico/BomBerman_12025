@@ -4,8 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "BloqueBase.h"
 #include "Factory_Main.generated.h"
-
 UCLASS()
 class BOMBERMAN_012025_API AFactory_Main : public AActor
 {
@@ -19,6 +19,8 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+    // Array de punteros a ABloqueBase
+    TArray<ABloqueBase*> Bloques;
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

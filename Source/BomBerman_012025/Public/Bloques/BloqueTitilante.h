@@ -34,8 +34,9 @@ protected:
     FTimerHandle TimerHandle_Disappear;
     FTimerHandle TimerHandle_Reappear;
 
+protected:
+    virtual void DestruirBloque();
 
-
-
-	
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bloque")
+    float DestructionTime = 10.0f; // Tiempo en segundos antes de que el bloque se destruya
 };

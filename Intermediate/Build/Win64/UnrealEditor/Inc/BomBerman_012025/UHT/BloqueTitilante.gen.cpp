@@ -43,9 +43,14 @@ struct Z_Construct_UClass_ABloqueTitilante_Statics
 		{ "Category", "BloqueTitilante" },
 		{ "ModuleRelativePath", "Public/Bloques/BloqueTitilante.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DestructionTime_MetaData[] = {
+		{ "Category", "Bloque" },
+		{ "ModuleRelativePath", "Public/Bloques/BloqueTitilante.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_TiempoVisible;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_TiempoInvisible;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_DestructionTime;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -55,9 +60,11 @@ struct Z_Construct_UClass_ABloqueTitilante_Statics
 };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABloqueTitilante_Statics::NewProp_TiempoVisible = { "TiempoVisible", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABloqueTitilante, TiempoVisible), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TiempoVisible_MetaData), NewProp_TiempoVisible_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABloqueTitilante_Statics::NewProp_TiempoInvisible = { "TiempoInvisible", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABloqueTitilante, TiempoInvisible), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TiempoInvisible_MetaData), NewProp_TiempoInvisible_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABloqueTitilante_Statics::NewProp_DestructionTime = { "DestructionTime", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABloqueTitilante, DestructionTime), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DestructionTime_MetaData), NewProp_DestructionTime_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABloqueTitilante_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABloqueTitilante_Statics::NewProp_TiempoVisible,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABloqueTitilante_Statics::NewProp_TiempoInvisible,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABloqueTitilante_Statics::NewProp_DestructionTime,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABloqueTitilante_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ABloqueTitilante_Statics::DependentSingletons[])() = {
@@ -100,10 +107,10 @@ ABloqueTitilante::~ABloqueTitilante() {}
 struct Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Bloques_BloqueTitilante_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABloqueTitilante, ABloqueTitilante::StaticClass, TEXT("ABloqueTitilante"), &Z_Registration_Info_UClass_ABloqueTitilante, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABloqueTitilante), 3005553099U) },
+		{ Z_Construct_UClass_ABloqueTitilante, ABloqueTitilante::StaticClass, TEXT("ABloqueTitilante"), &Z_Registration_Info_UClass_ABloqueTitilante, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABloqueTitilante), 452088104U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Bloques_BloqueTitilante_h_2241550101(TEXT("/Script/BomBerman_012025"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Bloques_BloqueTitilante_h_4132947371(TEXT("/Script/BomBerman_012025"),
 	Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Bloques_BloqueTitilante_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Bloques_BloqueTitilante_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

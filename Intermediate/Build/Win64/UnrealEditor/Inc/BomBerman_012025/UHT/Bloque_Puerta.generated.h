@@ -24,8 +24,6 @@ public: \
 
 
 #define FID_Users_Magne_Documents_Unreal_Projects_BomBerman_012025_Source_BomBerman_012025_Public_Bloques_Bloque_Puerta_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ABloque_Puerta(); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ABloque_Puerta(ABloque_Puerta&&); \

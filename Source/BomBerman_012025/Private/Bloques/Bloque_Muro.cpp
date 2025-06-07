@@ -24,5 +24,45 @@ ABloque_Muro::ABloque_Muro()
 	}
 
 	bEsDestructible = false; // Set the block as destructible by default
+	MoveSpeed = 1.0f; // velocidad del movimiento
+	Tolerance = 1.0f;   // cuán cerca debe estar para considerar que llegó al destino
+}
 
+void ABloque_Muro::BeginPlay()
+{
+	Super::BeginPlay();
+	StartLocation = GetActorLocation();
+	EndLocation = StartLocation + FVector(0, 0, 500); // se moverá 500 unidades en Y
+	TargetLocation = EndLocation;
+	bEsDestructible = true;
+	GetWorld()->GetTimerManager().SetTimer(TimerHandleExplosion, this, &ABloque_Muro::DestruirBloque, DestructionTime, false);
+
+}
+
+void ABloque_Muro::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	FVector CurrentLocation = GetActorLocation();
+	FVector NewLocation = FMath::VInterpTo(CurrentLocation, TargetLocation, DeltaTime, MoveSpeed);
+	SetActorLocation(NewLocation);
+
+	// Si está suficientemente cerca, cambiar dirección
+	if (FVector::Dist(NewLocation, TargetLocation) <= Tolerance)
+	{
+		TargetLocation = (TargetLocation.Equals(EndLocation)) ? StartLocation : EndLocation;
+	}
+}
+
+void ABloque_Muro::DestruirBloque()
+{
+	if (bEsDestructible)
+	{
+		// Destruir el bloque después de un pequeño retardo (por ejemplo, 0.1 segundos)
+		Destroy();
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Este bloque no es destructible."));
+	}
 }

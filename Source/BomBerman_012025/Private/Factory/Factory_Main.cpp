@@ -22,13 +22,21 @@ void AFactory_Main::BeginPlay()
 {
 	Super::BeginPlay();
 
+	//Creamos las fabricas que tenemos creadas
 	AMapa_Factory* FabricaMapa = GetWorld()->SpawnActor<AMapa_Factory>(AMapa_Factory::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
 	ABomba_Factory* FabricaBomba = GetWorld()->SpawnActor<ABomba_Factory>(ABomba_Factory::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);;
 	AEnemigo_Factory* FabricaEnemigo = GetWorld()->SpawnActor<AEnemigo_Factory>(AEnemigo_Factory::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
+	//Crea los bloques y los guarda en el array
+	ABloqueBase* Bloque;
+	for (int i = 0; i <= 5; i++) {
+		Bloque = FabricaMapa->CrearBloque("BloqueTitilante", FVector(1000 + i * 100, 1000, 100));
+		Bloques.Add(Bloque);
+	}
 	//ABloqueBase* Bloque = FabricaMapa->CrearBloque("BloqueTitilante", FVector(1000, 1000, 100));
 	// Bloque = FabricaMapa->CrearBloque("BloqueTitilante", FVector(1100, 1000, 100));
 	 //Bloque = FabricaMapa->CrearBloque("BloqueTitilante", FVector(1200, 1000, 100));
 
+	//Crea otros objetos
 	 IBomba_Prototype* BombaPrototype = FabricaBomba->CrearBomba(FVector(1500, 1000, 100), "Multi Bomba");
 	 BombaPrototype = FabricaBomba->CrearBomba(FVector(1150, 1100, 100), "Multi Bomba");
 

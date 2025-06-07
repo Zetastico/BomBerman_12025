@@ -75,8 +75,12 @@ void ABomBerman_012025GameMode::BeginPlay()
 		//Creamos el composite
 		AComposite_Main* Composite = World->SpawnActor<AComposite_Main>(AComposite_Main::StaticClass(), Posicion, FRotator::ZeroRotator, Params);
 		
+
+		//-----------------------------------------------Factory-----------------------------------------------
+		//Creamos el factory
+		AFactory_Main* Factory = World->SpawnActor<AFactory_Main>(AFactory_Main::StaticClass(), Posicion, FRotator::ZeroRotator, Params);
 		/*
-				//-----------------------------------------------PROTOTYPE------------------------------------------------
+				//-----------------------------------------------PROTOTYPE_2do Parcial------------------------------------------------
 		//Posicion de los bloques prototipos
 		FVector PosicionInicial = FVector(0, 0, 0);
 

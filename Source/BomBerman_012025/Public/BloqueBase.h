@@ -29,4 +29,12 @@ protected:
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bloque")
 	bool bEsDestructible = true;
+
+	    //Destruye el bloque
+    void DestruirBloque();
+
+protected:
+
+	//Manejador del temporizador para la destrucción
+    FTimerHandle TimerHandleExplosion;
 };
