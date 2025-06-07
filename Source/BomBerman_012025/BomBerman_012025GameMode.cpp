@@ -61,7 +61,7 @@ void ABomBerman_012025GameMode::BeginPlay()
 		Datos.TiempoParaExplotar = 10.0f;
 		Datos.RangoExplosion = 20.0f;
 		FVector PosicionBomba = FVector(1100, 1100, -10); // Donde quieras colocarla
-		// Spawneamos la bomba prototipo
+		//Spawneamos la bomba prototipo
 		AMulti_Bomba* BombaPrototype = World->SpawnActor<AMulti_Bomba>(AMulti_Bomba::StaticClass(), Posicion, FRotator::ZeroRotator, Params);
 		if (BombaPrototype)
 		{
