@@ -140,6 +140,21 @@
     <ClCompile Include="..\..\Source\BomBerman_012025\Private\Builder\Mapa_Producto.cpp">
       <Filter>Source\BomBerman_012025\Private\Builder</Filter>
     </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Private\Composite">
+      <UniqueIdentifier>{BB5ED1CE-3595-396A-B410-F8D9BADC5799}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Composite\Bloque_Base_Composite.cpp">
+      <Filter>Source\BomBerman_012025\Private\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Composite\Bloque_Simple.cpp">
+      <Filter>Source\BomBerman_012025\Private\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Composite\Composite_Main.cpp">
+      <Filter>Source\BomBerman_012025\Private\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Composite\Grupo_Bloques.cpp">
+      <Filter>Source\BomBerman_012025\Private\Composite</Filter>
+    </ClCompile>
     <Filter Include="Source\BomBerman_012025\Private\Enemigos">
       <UniqueIdentifier>{9ECAA600-DFEC-3353-9373-F37381113545}</UniqueIdentifier>
     </Filter>
@@ -280,6 +295,21 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Public\Builder\Mapa_Producto.h">
       <Filter>Source\BomBerman_012025\Public\Builder</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Public\Composite">
+      <UniqueIdentifier>{B530DB77-389A-385C-8F37-D4EC41C16EB7}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Composite\Bloque_Base_Composite.h">
+      <Filter>Source\BomBerman_012025\Public\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Composite\Bloque_Simple.h">
+      <Filter>Source\BomBerman_012025\Public\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Composite\Composite_Main.h">
+      <Filter>Source\BomBerman_012025\Public\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Composite\Grupo_Bloques.h">
+      <Filter>Source\BomBerman_012025\Public\Composite</Filter>
     </ClCompile>
     <Filter Include="Source\BomBerman_012025\Public\Enemigos">
       <UniqueIdentifier>{89C12F5D-8F7A-3182-8DE5-2ADCFCCD76F7}</UniqueIdentifier>

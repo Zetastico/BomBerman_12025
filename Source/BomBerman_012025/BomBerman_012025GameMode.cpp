@@ -9,6 +9,7 @@
 #include "Propotype/Multi_bomba.h"
 #include "Facade/Bloque_Facade.h"
 #include "Builder/Builder_Main.h"
+#include "Composite/Composite_Main.h"
 #include "2do_Parcial/2P_Prototype/Bloque_Prototype.h"	
 #include "2do_Parcial/2P_Prototype/P_Muro.h"
 #include "2do_Parcial/2P_Prototype/P_Madera.h"
@@ -51,8 +52,8 @@ void ABomBerman_012025GameMode::BeginPlay()
 
 
 		//-----------------------------------------------Builder-----------------------------------------------
-		ABuilder_Main* Builder = World->SpawnActor<ABuilder_Main>(ABuilder_Main::StaticClass(), Posicion, FRotator::ZeroRotator, Params);
-		Builder->ConstrirMapaDificil();
+		//ABuilder_Main* Builder = World->SpawnActor<ABuilder_Main>(ABuilder_Main::StaticClass(), Posicion, FRotator::ZeroRotator, Params);
+		//Builder->ConstrirMapaDificil();
 
 		//-----------------------------------------------Prototype---------------------------------------------
 		//Datos de la bomba
@@ -69,6 +70,11 @@ void ABomBerman_012025GameMode::BeginPlay()
 			//Clonamos la bomba prototipo
 			BombaPrototype->Clone();
 		}
+
+		//-----------------------------------------------Composite---------------------------------------------
+		//Creamos el composite
+		AComposite_Main* Composite = World->SpawnActor<AComposite_Main>(AComposite_Main::StaticClass(), Posicion, FRotator::ZeroRotator, Params);
+		
 		/*
 				//-----------------------------------------------PROTOTYPE------------------------------------------------
 		//Posicion de los bloques prototipos
