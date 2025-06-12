@@ -62,6 +62,9 @@
     <ClCompile Include="..\..\Source\BomBerman_012025\Private\BloqueBase.cpp">
       <Filter>Source\BomBerman_012025\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\PatrullandoState.cpp">
+      <Filter>Source\BomBerman_012025\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\BomBerman_012025\Private\2do_Parcial">
       <UniqueIdentifier>{191C4375-00EB-3757-A140-33C2A1AA0955}</UniqueIdentifier>
     </Filter>
@@ -200,6 +203,24 @@
     <ClCompile Include="..\..\Source\BomBerman_012025\Private\Nav_Mesh_Bounds_Volum\Navi.cpp">
       <Filter>Source\BomBerman_012025\Private\Nav_Mesh_Bounds_Volum</Filter>
     </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Private\Observer">
+      <UniqueIdentifier>{0B116F42-4D0F-340A-A503-A12E9C9C400C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Observer\Bloque_Trampa.cpp">
+      <Filter>Source\BomBerman_012025\Private\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Observer\Enemigo_Observer.cpp">
+      <Filter>Source\BomBerman_012025\Private\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Observer\Notificador.cpp">
+      <Filter>Source\BomBerman_012025\Private\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Observer\Observer_Main.cpp">
+      <Filter>Source\BomBerman_012025\Private\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\Observer\Suscriptor.cpp">
+      <Filter>Source\BomBerman_012025\Private\Observer</Filter>
+    </ClCompile>
     <Filter Include="Source\BomBerman_012025\Private\Propotype">
       <UniqueIdentifier>{C5FB6DAE-E9ED-320D-A41E-0FF30698D33C}</UniqueIdentifier>
     </Filter>
@@ -212,10 +233,28 @@
     <ClCompile Include="..\..\Source\BomBerman_012025\Private\Propotype\Prototype_Main.cpp">
       <Filter>Source\BomBerman_012025\Private\Propotype</Filter>
     </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Private\State">
+      <UniqueIdentifier>{18BB6486-0DC6-3D0F-9F1F-B40FDE1620CE}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\State\Enemigo_State.cpp">
+      <Filter>Source\BomBerman_012025\Private\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\State\State.cpp">
+      <Filter>Source\BomBerman_012025\Private\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\State\StateAtacar.cpp">
+      <Filter>Source\BomBerman_012025\Private\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Private\State\State_Patrullar.cpp">
+      <Filter>Source\BomBerman_012025\Private\State</Filter>
+    </ClCompile>
     <Filter Include="Source\BomBerman_012025\Public">
       <UniqueIdentifier>{02B8D00C-7EEE-3EE8-854D-F3C12403A565}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\BomBerman_012025\Public\BloqueBase.h">
+      <Filter>Source\BomBerman_012025\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\PatrullandoState.h">
       <Filter>Source\BomBerman_012025\Public</Filter>
     </ClCompile>
     <Filter Include="Source\BomBerman_012025\Public\2do_Parcial">
@@ -356,6 +395,24 @@
     <ClCompile Include="..\..\Source\BomBerman_012025\Public\Nav_Mesh_Bounds_Volum\Navi.h">
       <Filter>Source\BomBerman_012025\Public\Nav_Mesh_Bounds_Volum</Filter>
     </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Public\Observer">
+      <UniqueIdentifier>{727856C2-5A58-3002-B8A7-8B64D6F4C11A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Observer\Bloque_Trampa.h">
+      <Filter>Source\BomBerman_012025\Public\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Observer\Enemigo_Observer.h">
+      <Filter>Source\BomBerman_012025\Public\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Observer\Notificador.h">
+      <Filter>Source\BomBerman_012025\Public\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Observer\Observer_Main.h">
+      <Filter>Source\BomBerman_012025\Public\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\Observer\Suscriptor.h">
+      <Filter>Source\BomBerman_012025\Public\Observer</Filter>
+    </ClCompile>
     <Filter Include="Source\BomBerman_012025\Public\Propotype">
       <UniqueIdentifier>{C5170F04-1BCA-3CF2-9B65-60D4C55ADA92}</UniqueIdentifier>
     </Filter>
@@ -367,6 +424,21 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\BomBerman_012025\Public\Propotype\Prototype_Main.h">
       <Filter>Source\BomBerman_012025\Public\Propotype</Filter>
+    </ClCompile>
+    <Filter Include="Source\BomBerman_012025\Public\State">
+      <UniqueIdentifier>{E750E30D-275E-3663-B1D9-1B5D668CD2C3}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\State\Enemigo_State.h">
+      <Filter>Source\BomBerman_012025\Public\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\State\State.h">
+      <Filter>Source\BomBerman_012025\Public\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\State\StateAtacar.h">
+      <Filter>Source\BomBerman_012025\Public\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomBerman_012025\Public\State\State_Patrullar.h">
+      <Filter>Source\BomBerman_012025\Public\State</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
